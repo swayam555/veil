@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Veil settings</title>
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body class="page">
+  <main class="wrap">
+    <header class="head"><img src="icons/48.png" alt="" width="32" height="32" /><div><h1>Veil</h1><p>AI data guard for your browser</p></div></header>
+    <p class="muted">Your security team gives you these values. If your company manages this extension, they are already set and locked.</p>
+    <form id="form">
+      <label>Veil server<input id="server" type="url" placeholder="https://veil.yourcompany.com" required /></label>
+      <label>Extension key<input id="key" type="password" placeholder="vk_ext_…" autocomplete="off" required /></label>
+      <label>Your work email<input id="user" type="email" placeholder="you@company.com" /></label>
+      <label class="check"><input id="enabled" type="checkbox" /> Check what I paste and send on AI websites</label>
+      <div class="actions"><button type="submit" class="primary">Save and test</button></div>
+    </form>
+    <p id="status" class="status" role="status"></p>
+  </main>
+  <script src="lib/veil-core.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>

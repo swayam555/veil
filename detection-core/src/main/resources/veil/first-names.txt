@@ -1,0 +1,28 @@
+# Common first names (India, US, UK). Ambiguous ones that are also English words are marked with *:
+# they only count as a name with a surname or a context word.
+aarav aditya akash akshay aman amit amitabh anand anil anjali ankit ankita anupam arjun arun aruna arvind asha ashok
+ayesha bhavna chetan deepa deepak deepika dev* devendra dinesh divya farhan fatima ganesh gaurav geeta girish gita
+gopal govind hari harish harsh hema imran ishaan jaya jayesh jitendra kabir kajal kamala karan karthik kavita kavya
+kiran krishna kunal lakshmi lalit madhu mahesh manish manoj meena meera mohan mohit mukesh nandini naveen neha nikhil
+nisha nitin pallavi pankaj parth pooja prakash pranav prateek pratik preeti priya priyanka rahul raj rajesh rajiv
+rakesh ramesh ravi rekha ritu rohan rohit sachin sahil sameer sandeep sanjay sanjana santosh sarita saurabh shalini
+shikha shilpa shivam shreya shubham siddharth simran sneha sonia sudhir sumit sunil sunita suresh swati tanvi tarun
+uma usha varun vijay vikas vikram vinay vinod vishal vivek yash yogesh zara abhishek aishwarya alok ananya anushka
+arnav bharat chandan darshan esha gautam hemant indira irfan jasmine jyoti kartik keshav lata mamta mayank mehul
+naina namrata omkar parveen poonam radha raghav rajat rashmi reena rupal salman sana sapna seema shabana shankar
+shashi sheetal shweta sonal subhash sudha sunny* swayam tanya tejas trisha tushar ujjwal vandana veena vidya yamini
+zoya aryan ishita mansi riya ritika nidhi ashwin harshit tanmay mihir kriti diya anika vihaan reyansh ayaan
+james john robert michael william david richard joseph thomas charles christopher daniel matthew anthony mark* donald
+steven paul andrew joshua kenneth kevin brian george timothy ronald edward jason jeffrey ryan jacob gary nicholas eric
+jonathan stephen larry justin scott brandon benjamin samuel gregory alexander frank patrick raymond jack dennis jerry
+tyler aaron jose adam nathan henry douglas zachary peter kyle noah ethan jeremy walter christian keith roger terry
+austin sean gerald carl harold dylan arthur lawrence jordan jesse bryan billy bruce gabriel joe logan albert willie
+alan eugene russell vincent philip bobby johnny bradley mary patricia jennifer linda elizabeth barbara susan jessica
+sarah karen lisa nancy betty sandra margaret ashley kimberly emily donna michelle carol amanda melissa deborah
+stephanie dorothy rebecca sharon laura cynthia amy kathleen angela shirley brenda emma anna pamela nicole samantha
+katherine christine helen debra rachel carolyn janet maria catherine heather diane olivia julie joyce victoria ruth
+virginia lauren kelly christina joan evelyn judith andrea hannah megan cheryl jacqueline martha madison teresa
+gloria sara janice ann kathryn abigail sophia frances jean alice judy isabella julia grace* amber* denise danielle
+marilyn beverly charlotte natalie theresa diana brittany doris kayla alexis lori marie oliver liam lucas mason
+elijah james aiden mia ava amelia harper ella chloe zoe lily layla aria nora riley eleanor hazel aurora penelope
+sofia priyanshi hope* will* may* rose* dawn* faith* joy* summer* june* april* august* bill* rich* sky* page* drew*

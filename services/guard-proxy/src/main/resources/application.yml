@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: guard-proxy
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+      timeout: 2s
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP:localhost:9092}
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      properties:
+        enable.idempotence: true
+        linger.ms: 10
+        # Never let a Kafka outage block a request thread for long; events are buffered instead.
+        max.block.ms: 1000
+        delivery.timeout.ms: 30000
+        request.timeout.ms: 10000
+  codec:
+    max-in-memory-size: 4MB
+
+server:
+  port: ${PORT:8201}
+  shutdown: graceful
+
+veil:
+  master-key: ${VEIL_MASTER_KEY:3q2+7wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=}
+  control-plane-url: ${CONTROL_PLANE_URL:http://localhost:8202}
+  detection-timeout: ${DETECTION_TIMEOUT:1500ms}
+  upstream-timeout: ${UPSTREAM_TIMEOUT:60s}
+  semantic-cache-distance: ${SEMANTIC_CACHE_DISTANCE:0.06}
+  semantic-cache-ttl: ${SEMANTIC_CACHE_TTL:1h}
+  semantic-detection: ${SEMANTIC_DETECTION:true}
+  max-body-chars: ${MAX_BODY_CHARS:200000}
+  instance-id: ${HOSTNAME:}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}

@@ -1,0 +1,71 @@
+# Services trust X-User-* identity headers set by the gateway, so only the gateway (and the services that need
+# each other's /internal APIs) may reach them. The proxy is the only service exposed to clients directly.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: control-plane-from-gateway-and-proxy
+spec:
+  podSelector:
+    matchLabels: { app: control-plane }
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - podSelector:
+            matchExpressions:
+              - { key: app, operator: In, values: [edge-gateway, guard-proxy] }
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: insight-from-gateway-only
+spec:
+  podSelector:
+    matchLabels: { app: insight-service }
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - podSelector: { matchLabels: { app: edge-gateway } }
+---
+# The proxy serves the public /v1 API (through the ingress controller) and the console's /api/playground
+# routes (through the gateway). The control plane's traffic simulator also calls it.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: proxy-from-ingress-gateway-control-plane
+spec:
+  podSelector:
+    matchLabels: { app: guard-proxy }
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels: { kubernetes.io/metadata.name: ingress-nginx }
+        - podSelector:
+            matchExpressions:
+              - { key: app, operator: In, values: [edge-gateway, control-plane] }
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: gateway-from-ingress
+spec:
+  podSelector:
+    matchLabels: { app: edge-gateway }
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - namespaceSelector:
+            matchLabels: { kubernetes.io/metadata.name: ingress-nginx }
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: data-tier-from-apps-only
+spec:
+  podSelector:
+    matchLabels: { tier: data }
+  policyTypes: [Ingress]
+  ingress:
+    - from:
+        - podSelector: { matchLabels: { tier: app } }
+        - podSelector: { matchLabels: { tier: data } }

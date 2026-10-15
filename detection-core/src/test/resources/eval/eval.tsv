@@ -1,0 +1,510 @@
+Compare these two applicants: Robert Banerjee (PAN HVAPV2414H) and Vikram Reddy (PAN UZTCZ0963U).	PERSON=Robert Banerjee||PAN=HVAPV2414H||PERSON=Vikram Reddy||PAN=UZTCZ0963U
+Population of India is about 1450000000, write a short note on demographics.	
+Charge the corporate card 375008257722306 and send the invoice to sneha.thomas@example.org.	CREDIT_CARD=375008257722306||EMAIL=sneha.thomas@example.org
+KYC pending for PAN OKYPX8728F. Please verify the Aadhaar number 493402591038 before onboarding.	PAN=OKYPX8728F||AADHAAR=493402591038
+Charge the corporate card 374998810136997 and send the invoice to jennifer.sharma@outlook.com.	CREDIT_CARD=374998810136997||EMAIL=jennifer.sharma@outlook.com
+Our prod config has aws_access_key_id = AKIAQWNAWHFIB3KSRGYF and it stopped working, why?	API_KEY=AKIAQWNAWHFIB3KSRGYF
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_Zv1Qsp1P5ejjNkX3ydk2jH7657cjYH6BTtwg	API_KEY=ghp_Zv1Qsp1P5ejjNkX3ydk2jH7657cjYH6BTtwg
+client = OpenAI(api_key="sk-proj-1uaFz14crJPHHswdAYfioM0D6aLlrZzU5kS0xcea") gives an error, what am I doing wrong	API_KEY=sk-proj-1uaFz14crJPHHswdAYfioM0D6aLlrZzU5kS0xcea
+Summarise this ticket: user kavita.iyer@example.org says the app crashes. Contact them on +91 93916 71783.	EMAIL=kavita.iyer@example.org||PHONE=+91 93916 71783
+Explain the policy: employees must not share an api_key in chat.	
+Ms. Singh reported that her account number 48789983631153 shows a duplicate debit.	PERSON=Singh||BANK_ACCOUNT=48789983631153
+Compare these two applicants: Deepika Iyer (PAN UTSCM0327E) and Pooja Gupta (PAN YDSPJ0029W).	PERSON=Deepika Iyer||PAN=UTSCM0327E||PERSON=Pooja Gupta||PAN=YDSPJ0029W
+My Aadhaar is 2454 4790 1999 and PAN is VFRCM5131T, which ITR form should I file?	AADHAAR=2454 4790 1999||PAN=VFRCM5131T
+Batch 5601 3349 8593 failed quality checks, write the deviation report.	
+Tracking number 4673808332505094 shows the parcel is stuck in transit, what should I say?	
+Dear Rahul Gupta, your loan application was approved. Card ending details: 5184 1363 6029 3541.	PERSON=Rahul Gupta||CREDIT_CARD=5184 1363 6029 3541
+The server at 10.157.111.15 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=10.157.111.15
+client = OpenAI(api_key="sk-proj-MM9AqAoS4Zmmc37wyMhuIF1yMhcoytvtHWVxGwVI") gives an error, what am I doing wrong	API_KEY=sk-proj-MM9AqAoS4Zmmc37wyMhuIF1yMhcoytvtHWVxGwVI
+Dear Pooja Iyer, your loan application was approved. Card ending details: 4956364630640742.	PERSON=Pooja Iyer||CREDIT_CARD=4956364630640742
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-bBZA93Y3TenRNlUyk8wu8IpZ0suTGQVW8H6aiDXd'	API_KEY=sk-proj-bBZA93Y3TenRNlUyk8wu8IpZ0suTGQVW8H6aiDXd
+The db password is Summer@2026, can you write a connection snippet for Spring Boot?	PASSWORD=Summer@2026
+Explain how the Luhn algorithm validates card numbers in general.	
+Population of India is about 1450000000, write a short note on demographics.	
+Population of India is about 1450000000, write a short note on demographics.	
+Please summarise the attached release notes for version 10.4.2.	
+Order 5315 5448 9635 was delivered late, draft a polite apology to the customer.	
+KYC pending for PAN XCGPO8370O. Please verify the Aadhaar number 4943 6221 4008 before onboarding.	PAN=XCGPO8370O||AADHAAR=4943 6221 4008
+Customer Michael Reddy called about a failed refund. Aadhaar 4752 9375 2833, registered mobile 9165034705.	PERSON=Michael Reddy||AADHAAR=4752 9375 2833||PHONE=9165034705
+The server at 172.106.161.9 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=172.106.161.9
+Draft a reply to Michael Thomas (michael.thomas@gmail.com) explaining why their card 4261-0268-4622-0607 was declined.	PERSON=Michael Thomas||EMAIL=michael.thomas@gmail.com||CREDIT_CARD=4261-0268-4622-0607
+Customer Sarah Kulkarni called about a failed refund. Aadhaar 7579 4428 0859, registered mobile +91 75336 12398.	PERSON=Sarah Kulkarni||AADHAAR=7579 4428 0859||PHONE=+91 75336 12398
+Explain how the Luhn algorithm validates card numbers in general.	
+Compare these two applicants: Emily Reddy (PAN MLKCA4206Y) and Sarah Gupta (PAN VSNCV4033X).	PERSON=Emily Reddy||PAN=MLKCA4206Y||PERSON=Sarah Gupta||PAN=VSNCV4033X
+The password field should require at least 12 characters, write the validation.	
+Spoke to Michael Reddy today; her alternate number is (955) 923-0238 and email michael.reddy@acme-corp.in.	PERSON=Michael Reddy||PHONE=(955) 923-0238||EMAIL=michael.reddy@acme-corp.in
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-I7g88qN8BsUQie6yYrEGESMSZYrM0QYVWFKa8LIB'	API_KEY=sk-proj-I7g88qN8BsUQie6yYrEGESMSZYrM0QYVWFKa8LIB
+Tracking number 4287294933797920 shows the parcel is stuck in transit, what should I say?	
+Customer support asked: why is my refund taking 7 days?	
+Batch 858216260564 failed quality checks, write the deviation report.	
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+What is the difference between PAN and TAN in Indian taxation?	
+Our request id 049c43f4-0087-4bf8-8f7e-0e0b3b04120d keeps timing out at the gateway, how do I add retries?	
+Ms. Banerjee reported that her account number 398574206153 shows a duplicate debit.	PERSON=Banerjee||BANK_ACCOUNT=398574206153
+Patient Pooja Sharma, Aadhaar 4396 8952 4869, was admitted on 3 March. Write the insurance claim summary.	PERSON=Pooja Sharma||AADHAAR=4396 8952 4869
+KYC pending for PAN TPRPF2290P. Please verify the Aadhaar number 9162 1192 0332 before onboarding.	PAN=TPRPF2290P||AADHAAR=9162 1192 0332
+client = OpenAI(api_key="sk-proj-dZKllMQDxjyYAbRzRuhd5HcMRNezdqnGgydmhce3") gives an error, what am I doing wrong	API_KEY=sk-proj-dZKllMQDxjyYAbRzRuhd5HcMRNezdqnGgydmhce3
+Call the US client at (457) 354-8873 tomorrow and confirm the demo.	PHONE=(457) 354-8873
+Charge the corporate card 5567-8927-1348-0709 and send the invoice to meera.miller@outlook.com.	CREDIT_CARD=5567-8927-1348-0709||EMAIL=meera.miller@outlook.com
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Employee SSN 774-41-9481 was entered twice in payroll, write an apology email to Mr. Nair.	US_SSN=774-41-9481||PERSON=Nair
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+Write SQL to find orders placed by daniel.brown@acme-corp.in using card 6521327238694701.	EMAIL=daniel.brown@acme-corp.in||CREDIT_CARD=6521327238694701
+Summarise this ticket: user sneha.johnson@gmail.com says the app crashes. Contact them on +91 62954 15618.	EMAIL=sneha.johnson@gmail.com||PHONE=+91 62954 15618
+Ms. Banerjee reported that her account number 949933044594 shows a duplicate debit.	PERSON=Banerjee||BANK_ACCOUNT=949933044594
+Format this address label for Emily Johnson, phone 9645448812, GSTIN 04EEXPM9137A2Z7.	PERSON=Emily Johnson||PHONE=9645448812||GSTIN=04EEXPM9137A2Z7
+Spoke to Karan Iyer today; her alternate number is (355) 985-4191 and email karan.iyer@yahoo.co.in.	PERSON=Karan Iyer||PHONE=(355) 985-4191||EMAIL=karan.iyer@yahoo.co.in
+Revert commit a119f5f31c973e1af63af48b09e28646dee7e50b and explain what a git revert does.	
+Write a haiku about the monsoon in Mumbai.	
+The db password is Pa55w0rd!x, can you write a connection snippet for Spring Boot?	PASSWORD=Pa55w0rd!x
+Tracking number 4366987236791983 shows the parcel is stuck in transit, what should I say?	
+Spoke to Rahul Patel today; her alternate number is (520) 693-6668 and email rahul.patel@yahoo.co.in.	PERSON=Rahul Patel||PHONE=(520) 693-6668||EMAIL=rahul.patel@yahoo.co.in
+Dear Sanjay Miller, your loan application was approved. Card ending details: 5185 1969 6707 2853.	PERSON=Sanjay Miller||CREDIT_CARD=5185 1969 6707 2853
+Batch 4541 5091 1947 failed quality checks, write the deviation report.	
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_3Aa291d3ScX1vkHcncHfWGicP1LWnpipNmyI	API_KEY=ghp_3Aa291d3ScX1vkHcncHfWGicP1LWnpipNmyI
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJLgZwLI7QHg-qwXO-ntP3Yk6TuF_Bqa.-oj6AnlWEXPrJ8qbqDsr1BLnVSB9CP4zQkuuM1gMikj	JWT=eyJhbGciOiJIUzI1NiJ9.eyJLgZwLI7QHg-qwXO-ntP3Yk6TuF_Bqa.-oj6AnlWEXPrJ8qbqDsr1BLnVSB9CP4zQkuuM1gMikj
+Compare these two applicants: Arjun Banerjee (PAN LNMPU2004Q) and Sneha Reddy (PAN DHBPF7993F).	PERSON=Arjun Banerjee||PAN=LNMPU2004Q||PERSON=Sneha Reddy||PAN=DHBPF7993F
+The server at 10.6.51.24 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=10.6.51.24
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-Fd1qcwzEaFGZaqH6Zm9Q3TS9cpYfOXV62nArxfTV'	API_KEY=sk-proj-Fd1qcwzEaFGZaqH6Zm9Q3TS9cpYfOXV62nArxfTV
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+Employee SSN 759-26-8983 was entered twice in payroll, write an apology email to Mr. Nair.	US_SSN=759-26-8983||PERSON=Nair
+The password field should require at least 12 characters, write the validation.	
+My Aadhaar is 9452 1691 0040 and PAN is YSYCM9008D, which ITR form should I file?	AADHAAR=9452 1691 0040||PAN=YSYCM9008D
+What is the difference between PAN and TAN in Indian taxation?	
+Draft a reply to Pooja Banerjee (pooja.banerjee@gmail.com) explaining why their card 6521-3931-4311-4938 was declined.	PERSON=Pooja Banerjee||EMAIL=pooja.banerjee@gmail.com||CREDIT_CARD=6521-3931-4311-4938
+Please summarise the attached release notes for version 10.4.2.	
+Invoice INV-2026-000195 totals Rs 12,49,999. Write a reminder email to the finance team.	
+Invoice INV-2026-000236 totals Rs 12,49,999. Write a reminder email to the finance team.	
+Draft a reply to Robert Nair (robert.nair@example.org) explaining why their card 5525-0813-6589-1667 was declined.	PERSON=Robert Nair||EMAIL=robert.nair@example.org||CREDIT_CARD=5525-0813-6589-1667
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_D53CgHQgkhpo2VLGuDd1i59aAEnQkeA3HBDO	API_KEY=ghp_D53CgHQgkhpo2VLGuDd1i59aAEnQkeA3HBDO
+Patient Jennifer Verma, Aadhaar 9276 5725 5592, was admitted on 3 March. Write the insurance claim summary.	PERSON=Jennifer Verma||AADHAAR=9276 5725 5592
+Compare these two applicants: Arjun Brown (PAN KPBCD8384L) and Pooja Verma (PAN GCSPE2228U).	PERSON=Arjun Brown||PAN=KPBCD8384L||PERSON=Pooja Verma||PAN=GCSPE2228U
+Call the US client at (800) 943-8965 tomorrow and confirm the demo.	PHONE=(800) 943-8965
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJfCrgcE7B9c7rogQcbsvPeexhUD8bah.3oxXlOakOsN9X4GWFSVnYlgwHY6hV4xrLoK9E2EUOmU	JWT=eyJhbGciOiJIUzI1NiJ9.eyJfCrgcE7B9c7rogQcbsvPeexhUD8bah.3oxXlOakOsN9X4GWFSVnYlgwHY6hV4xrLoK9E2EUOmU
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+Patient Ananya Thomas, Aadhaar 3922 8358 2780, was admitted on 3 March. Write the insurance claim summary.	PERSON=Ananya Thomas||AADHAAR=3922 8358 2780
+Summarise this ticket: user sneha.banerjee@outlook.com says the app crashes. Contact them on +91-9167881449.	EMAIL=sneha.banerjee@outlook.com||PHONE=+91-9167881449
+Patient Aditya Kulkarni, Aadhaar 4976-4811-1600, was admitted on 3 March. Write the insurance claim summary.	PERSON=Aditya Kulkarni||AADHAAR=4976-4811-1600
+Please wire the refund to IBAN GB41WEST29177713689341 for Karan Nair.	IBAN=GB41WEST29177713689341||PERSON=Karan Nair
+Format this address label for Neha Patel, phone 7963074097, GSTIN 01VNJPH6495S2ZO.	PERSON=Neha Patel||PHONE=7963074097||GSTIN=01VNJPH6495S2ZO
+Employee SSN 252-37-6156 was entered twice in payroll, write an apology email to Mr. Sharma.	US_SSN=252-37-6156||PERSON=Sharma
+What does an Aadhaar number look like and how is it verified?	
+Employee SSN 214-77-0704 was entered twice in payroll, write an apology email to Mr. Banerjee.	US_SSN=214-77-0704||PERSON=Banerjee
+The db password is Pa55w0rd!x, can you write a connection snippet for Spring Boot?	PASSWORD=Pa55w0rd!x
+Charge the corporate card 6521387058138734 and send the invoice to ananya.miller@yahoo.co.in.	CREDIT_CARD=6521387058138734||EMAIL=ananya.miller@yahoo.co.in
+Dear Emily Nair, your loan application was approved. Card ending details: 2221 5541 1728 4948.	PERSON=Emily Nair||CREDIT_CARD=2221 5541 1728 4948
+The password field should require at least 12 characters, write the validation.	
+Revert commit 87401c9b2aecae7f744683c1ed12a7cdab5854c8 and explain what a git revert does.	
+Order 9226 4137 8310 was delivered late, draft a polite apology to the customer.	
+Spoke to Michael Kulkarni today; her alternate number is (375) 468-1423 and email michael.kulkarni@acme-corp.in.	PERSON=Michael Kulkarni||PHONE=(375) 468-1423||EMAIL=michael.kulkarni@acme-corp.in
+My Aadhaar is 8105 7641 4388 and PAN is CZRCM3250S, which ITR form should I file?	AADHAAR=8105 7641 4388||PAN=CZRCM3250S
+Customer Pooja Brown called about a failed refund. Aadhaar 5212 6953 2086, registered mobile +91-8250966928.	PERSON=Pooja Brown||AADHAAR=5212 6953 2086||PHONE=+91-8250966928
+Compare these two applicants: Daniel Patel (PAN VQHPY4063F) and Deepika Reddy (PAN QIGPJ3347D).	PERSON=Daniel Patel||PAN=VQHPY4063F||PERSON=Deepika Reddy||PAN=QIGPJ3347D
+Format this address label for Neha Reddy, phone +91-6941836360, GSTIN 17OLKPE8182N2Z2.	PERSON=Neha Reddy||PHONE=+91-6941836360||GSTIN=17OLKPE8182N2Z2
+Order 300356576570 was delivered late, draft a polite apology to the customer.	
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-Z4HBg8Cu0LZDSuIev9Wzchs5idWrSITy1octStnZ'	API_KEY=sk-proj-Z4HBg8Cu0LZDSuIev9Wzchs5idWrSITy1octStnZ
+Draft a reply to Meera Anderson (meera.anderson@gmail.com) explaining why their card 6521 8566 3223 9572 was declined.	PERSON=Meera Anderson||EMAIL=meera.anderson@gmail.com||CREDIT_CARD=6521 8566 3223 9572
+Summarise this ticket: user pooja.kulkarni@yahoo.co.in says the app crashes. Contact them on 9953379756.	EMAIL=pooja.kulkarni@yahoo.co.in||PHONE=9953379756
+Please wire the refund to IBAN DE91746379189903814388 for Jennifer Gupta.	IBAN=DE91746379189903814388||PERSON=Jennifer Gupta
+Please summarise the attached release notes for version 10.4.2.	
+What does an Aadhaar number look like and how is it verified?	
+The server at 192.99.9.84 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=192.99.9.84
+Customer Deepika Williams called about a failed refund. Aadhaar 5456 4591 5857, registered mobile 7496484504.	PERSON=Deepika Williams||AADHAAR=5456 4591 5857||PHONE=7496484504
+Patient Robert Verma, Aadhaar 6197-9478-7907, was admitted on 3 March. Write the insurance claim summary.	PERSON=Robert Verma||AADHAAR=6197-9478-7907
+Explain how the Luhn algorithm validates card numbers in general.	
+Customer Meera Brown called about a failed refund. Aadhaar 7775-9163-6583, registered mobile +91-7525264230.	PERSON=Meera Brown||AADHAAR=7775-9163-6583||PHONE=+91-7525264230
+Charge the corporate card 5106 6858 1224 3376 and send the invoice to neha.gupta@outlook.com.	CREDIT_CARD=5106 6858 1224 3376||EMAIL=neha.gupta@outlook.com
+Please wire the refund to IBAN FR304182328291A991592323152 for Aditya Verma.	IBAN=FR304182328291A991592323152||PERSON=Aditya Verma
+Write SQL to find orders placed by emily.sharma@outlook.com using card 4942724823108376.	EMAIL=emily.sharma@outlook.com||CREDIT_CARD=4942724823108376
+Spoke to Sarah Williams today; her alternate number is (207) 532-7346 and email sarah.williams@outlook.com.	PERSON=Sarah Williams||PHONE=(207) 532-7346||EMAIL=sarah.williams@outlook.com
+Write SQL to find orders placed by neha.sharma@outlook.com using card 2221 6939 9718 7845.	EMAIL=neha.sharma@outlook.com||CREDIT_CARD=2221 6939 9718 7845
+Our request id 5b50f0c7-3c91-0b8a-6b9c-920514421b90 keeps timing out at the gateway, how do I add retries?	
+Charge the corporate card 5513670642111933 and send the invoice to aditya.miller@yahoo.co.in.	CREDIT_CARD=5513670642111933||EMAIL=aditya.miller@yahoo.co.in
+Calculate 1234567890 times 42 and explain the steps.	
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_nd21YBtSTIpgaSgSwLyb2Sk0n0bd3L4WbfcE	API_KEY=ghp_nd21YBtSTIpgaSgSwLyb2Sk0n0bd3L4WbfcE
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJl9D0JhkdczMDqrb0JmWESiwUZNb1nV.m6438lbxuPlogPkEs8rM54HHbTf7U4xL8B5BY7OYqBl	JWT=eyJhbGciOiJIUzI1NiJ9.eyJl9D0JhkdczMDqrb0JmWESiwUZNb1nV.m6438lbxuPlogPkEs8rM54HHbTf7U4xL8B5BY7OYqBl
+KYC pending for PAN DAUPA0274Y. Please verify the Aadhaar number 9084-5464-4725 before onboarding.	PAN=DAUPA0274Y||AADHAAR=9084-5464-4725
+Patient Vikram Miller, Aadhaar 789247714247, was admitted on 3 March. Write the insurance claim summary.	PERSON=Vikram Miller||AADHAAR=789247714247
+client = OpenAI(api_key="sk-proj-bJDFQ5VwJaV8Os30NzjatbyVYzgFSE0d17vJysYc") gives an error, what am I doing wrong	API_KEY=sk-proj-bJDFQ5VwJaV8Os30NzjatbyVYzgFSE0d17vJysYc
+Call the US client at (399) 955-3456 tomorrow and confirm the demo.	PHONE=(399) 955-3456
+Vendor GSTIN is 02KKVCK2636V2ZQ, bank IFSC SBIN0012072, account number 81871723949. Prepare the payment advice.	GSTIN=02KKVCK2636V2ZQ||IFSC=SBIN0012072||BANK_ACCOUNT=81871723949
+Patient David Gupta, Aadhaar 8567 6470 8252, was admitted on 3 March. Write the insurance claim summary.	PERSON=David Gupta||AADHAAR=8567 6470 8252
+Summarise this ticket: user kavita.reddy@yahoo.co.in says the app crashes. Contact them on +91-8500191029.	EMAIL=kavita.reddy@yahoo.co.in||PHONE=+91-8500191029
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_KaPW3weH10bMX0EOoOfVAGvM8oJbMutoeofi	API_KEY=ghp_KaPW3weH10bMX0EOoOfVAGvM8oJbMutoeofi
+Customer Jennifer Kulkarni called about a failed refund. Aadhaar 821057703511, registered mobile +91-8372274419.	PERSON=Jennifer Kulkarni||AADHAAR=821057703511||PHONE=+91-8372274419
+Vendor GSTIN is 05XLUCN9960Z2ZE, bank IFSC UTIB0468578, account number 59253584953. Prepare the payment advice.	GSTIN=05XLUCN9960Z2ZE||IFSC=UTIB0468578||BANK_ACCOUNT=59253584953
+Our request id aeabf64d-9e09-bd39-0951-8d37dd94c77f keeps timing out at the gateway, how do I add retries?	
+Population of India is about 1450000000, write a short note on demographics.	
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+Order 5231 0102 5933 was delivered late, draft a polite apology to the customer.	
+Explain how the Luhn algorithm validates card numbers in general.	
+Compare these two applicants: Deepika Sharma (PAN ICKPH5480C) and Ananya Miller (PAN JPHCH2054X).	PERSON=Deepika Sharma||PAN=ICKPH5480C||PERSON=Ananya Miller||PAN=JPHCH2054X
+Compare these two applicants: Kavita Williams (PAN GXKCP3016C) and Priya Iyer (PAN BGRPZ3219A).	PERSON=Kavita Williams||PAN=GXKCP3016C||PERSON=Priya Iyer||PAN=BGRPZ3219A
+Draft a reply to Deepika Patel (deepika.patel@yahoo.co.in) explaining why their card 5123679357260647 was declined.	PERSON=Deepika Patel||EMAIL=deepika.patel@yahoo.co.in||CREDIT_CARD=5123679357260647
+Patient Rahul Banerjee, Aadhaar 8816-2568-5064, was admitted on 3 March. Write the insurance claim summary.	PERSON=Rahul Banerjee||AADHAAR=8816-2568-5064
+Our request id f91856d1-51f0-fc9d-61e0-da4be2a7eb34 keeps timing out at the gateway, how do I add retries?	
+Customer Kavita Patel called about a failed refund. Aadhaar 9700-0938-6691, registered mobile +91 93703 82041.	PERSON=Kavita Patel||AADHAAR=9700-0938-6691||PHONE=+91 93703 82041
+Our request id 2b5ab430-23b2-4c66-02fe-4e05dedb8df8 keeps timing out at the gateway, how do I add retries?	
+Customer support asked: why is my refund taking 7 days?	
+Batch 7909 9749 6940 failed quality checks, write the deviation report.	
+Dear Robert Banerjee, your loan application was approved. Card ending details: 6011976706046195.	PERSON=Robert Banerjee||CREDIT_CARD=6011976706046195
+Compare these two applicants: Deepika Verma (PAN JCOPM1040B) and Michael Kulkarni (PAN USICL5389Y).	PERSON=Deepika Verma||PAN=JCOPM1040B||PERSON=Michael Kulkarni||PAN=USICL5389Y
+Customer David Thomas called about a failed refund. Aadhaar 6447 2214 3770, registered mobile +91-7300114878.	PERSON=David Thomas||AADHAAR=6447 2214 3770||PHONE=+91-7300114878
+Charge the corporate card 372702940553366 and send the invoice to karan.brown@acme-corp.in.	CREDIT_CARD=372702940553366||EMAIL=karan.brown@acme-corp.in
+Translate to Hindi: Hello Deepika Singh, your OTP was sent to +91 88757 61631.	PERSON=Deepika Singh||PHONE=+91 88757 61631
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-tOnd3BkfMI9h23hp9TsHzi6TtlqaNK4bZWfw7Lhg'	API_KEY=sk-proj-tOnd3BkfMI9h23hp9TsHzi6TtlqaNK4bZWfw7Lhg
+Explain how the Luhn algorithm validates card numbers in general.	
+Format this address label for Arjun Banerjee, phone 6954225525, GSTIN 06ZXNPE9201S1Z8.	PERSON=Arjun Banerjee||PHONE=6954225525||GSTIN=06ZXNPE9201S1Z8
+Format this address label for Deepika Gupta, phone 7444134471, GSTIN 34RKLCT0895A1ZC.	PERSON=Deepika Gupta||PHONE=7444134471||GSTIN=34RKLCT0895A1ZC
+Our prod config has aws_access_key_id = AKIA3MC35YTWJC6XVVYF and it stopped working, why?	API_KEY=AKIA3MC35YTWJC6XVVYF
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJpbuXvij4iac3pNpLaLsdtF5EeFO-pK.tDfeGYZwNk_3nBI11bUHVzbqoH70t9aRXz80mHC7AIK	JWT=eyJhbGciOiJIUzI1NiJ9.eyJpbuXvij4iac3pNpLaLsdtF5EeFO-pK.tDfeGYZwNk_3nBI11bUHVzbqoH70t9aRXz80mHC7AIK
+Invoice INV-2026-000420 totals Rs 12,49,999. Write a reminder email to the finance team.	
+Invoice INV-2026-000715 totals Rs 12,49,999. Write a reminder email to the finance team.	
+Dear Rohan Gupta, your loan application was approved. Card ending details: 377919637873643.	PERSON=Rohan Gupta||CREDIT_CARD=377919637873643
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Spoke to Ananya Williams today; her alternate number is (896) 845-4576 and email ananya.williams@outlook.com.	PERSON=Ananya Williams||PHONE=(896) 845-4576||EMAIL=ananya.williams@outlook.com
+The password field should require at least 12 characters, write the validation.	
+Draft a reply to Pooja Gupta (pooja.gupta@gmail.com) explaining why their card 6011 3511 9753 9308 was declined.	PERSON=Pooja Gupta||EMAIL=pooja.gupta@gmail.com||CREDIT_CARD=6011 3511 9753 9308
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-Rz7VltKfUT6OsY110GPppZMMFHfMQlQAwNhEq0Tq'	API_KEY=sk-proj-Rz7VltKfUT6OsY110GPppZMMFHfMQlQAwNhEq0Tq
+Write SQL to find orders placed by emily.thomas@gmail.com using card 5103885728351981.	EMAIL=emily.thomas@gmail.com||CREDIT_CARD=5103885728351981
+Vendor GSTIN is 26BXVPX0767I1ZI, bank IFSC UTIB0755518, account number 791301900127. Prepare the payment advice.	GSTIN=26BXVPX0767I1ZI||IFSC=UTIB0755518||BANK_ACCOUNT=791301900127
+Summarise this ticket: user robert.kulkarni@yahoo.co.in says the app crashes. Contact them on 9572150819.	EMAIL=robert.kulkarni@yahoo.co.in||PHONE=9572150819
+Explain the policy: employees must not share an api_key in chat.	
+The server at 172.99.248.75 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=172.99.248.75
+Compare these two applicants: Meera Johnson (PAN GBDPH8615N) and Deepika Mehta (PAN TGBPD7942L).	PERSON=Meera Johnson||PAN=GBDPH8615N||PERSON=Deepika Mehta||PAN=TGBPD7942L
+Explain the policy: employees must not share an api_key in chat.	
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+Please summarise the attached release notes for version 10.4.2.	
+Batch 978516833683 failed quality checks, write the deviation report.	
+KYC pending for PAN LHRCZ7755K. Please verify the Aadhaar number 545618969821 before onboarding.	PAN=LHRCZ7755K||AADHAAR=545618969821
+Ms. Verma reported that her account number 95121888179928 shows a duplicate debit.	PERSON=Verma||BANK_ACCOUNT=95121888179928
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJfJdUyHjJHpoof4iC1WH3V5L7PTixgx.Hx5yH2jKraZ2nrFMc6xDJ8MJFMtPDRbymew0LTFYwTP	JWT=eyJhbGciOiJIUzI1NiJ9.eyJfJdUyHjJHpoof4iC1WH3V5L7PTixgx.Hx5yH2jKraZ2nrFMc6xDJ8MJFMtPDRbymew0LTFYwTP
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJudCPG4IVFx8c7eq8CYZmJJDHMrnzSW.GCaRsTc5GrPn3YwGugg13A7O-LvNPD-5Ee3fJW-01ow	JWT=eyJhbGciOiJIUzI1NiJ9.eyJudCPG4IVFx8c7eq8CYZmJJDHMrnzSW.GCaRsTc5GrPn3YwGugg13A7O-LvNPD-5Ee3fJW-01ow
+The server at 10.221.230.212 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=10.221.230.212
+Write SQL to find orders placed by deepika.verma@yahoo.co.in using card 4197 0099 5850 5444.	EMAIL=deepika.verma@yahoo.co.in||CREDIT_CARD=4197 0099 5850 5444
+Employee SSN 820-60-8746 was entered twice in payroll, write an apology email to Mr. Reddy.	US_SSN=820-60-8746||PERSON=Reddy
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJdwyhQR8q-KCDihhxVqU4anSJ-6RkiI.DeWNWJQVtB4jnR31XOOZNBu-lSTlUHd454mewC8KCPR	JWT=eyJhbGciOiJIUzI1NiJ9.eyJdwyhQR8q-KCDihhxVqU4anSJ-6RkiI.DeWNWJQVtB4jnR31XOOZNBu-lSTlUHd454mewC8KCPR
+My Aadhaar is 9159 4879 6552 and PAN is ZOYCV2888S, which ITR form should I file?	AADHAAR=9159 4879 6552||PAN=ZOYCV2888S
+Vendor GSTIN is 17AHTPY9007T2ZU, bank IFSC KKBK0753019, account number 04242951318. Prepare the payment advice.	GSTIN=17AHTPY9007T2ZU||IFSC=KKBK0753019||BANK_ACCOUNT=04242951318
+Calculate 1234567890 times 42 and explain the steps.	
+My Aadhaar is 5865 3648 2231 and PAN is PMKPI2341P, which ITR form should I file?	AADHAAR=5865 3648 2231||PAN=PMKPI2341P
+Translate to Hindi: Hello Rahul Thomas, your OTP was sent to +91-9858806487.	PERSON=Rahul Thomas||PHONE=+91-9858806487
+Please wire the refund to IBAN GB06 WEST 1363 7142 1987 58 for Aditya Banerjee.	IBAN=GB06 WEST 1363 7142 1987 58||PERSON=Aditya Banerjee
+Vendor GSTIN is 35OZLCW4924N3ZT, bank IFSC SBIN0826323, account number 72525340296297. Prepare the payment advice.	GSTIN=35OZLCW4924N3ZT||IFSC=SBIN0826323||BANK_ACCOUNT=72525340296297
+Write a haiku about the monsoon in Mumbai.	
+Revert commit dfa9fc0adedd722b398855096c33b4d3a41a9045 and explain what a git revert does.	
+Batch 3686 1067 1890 failed quality checks, write the deviation report.	
+Format this address label for Ananya Mehta, phone +91 82423 54653, GSTIN 34MUSCT9685Q3ZD.	PERSON=Ananya Mehta||PHONE=+91 82423 54653||GSTIN=34MUSCT9685Q3ZD
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Write a haiku about the monsoon in Mumbai.	
+Draft a reply to Neha Banerjee (neha.banerjee@gmail.com) explaining why their card 6521-7836-9720-5985 was declined.	PERSON=Neha Banerjee||EMAIL=neha.banerjee@gmail.com||CREDIT_CARD=6521-7836-9720-5985
+Ms. Reddy reported that her account number 98172885505 shows a duplicate debit.	PERSON=Reddy||BANK_ACCOUNT=98172885505
+Tracking number 4203533481709643 shows the parcel is stuck in transit, what should I say?	
+Customer support asked: why is my refund taking 7 days?	
+Write a haiku about the monsoon in Mumbai.	
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_CPf6Wl2wAeN8sqaPwHey1PWLiLn6h6rbvCab	API_KEY=ghp_CPf6Wl2wAeN8sqaPwHey1PWLiLn6h6rbvCab
+Translate to Hindi: Hello Rahul Anderson, your OTP was sent to +91 88919 97458.	PERSON=Rahul Anderson||PHONE=+91 88919 97458
+KYC pending for PAN ZKHPZ0976D. Please verify the Aadhaar number 7349 9573 4264 before onboarding.	PAN=ZKHPZ0976D||AADHAAR=7349 9573 4264
+My Aadhaar is 469284915493 and PAN is GKPPQ9168V, which ITR form should I file?	AADHAAR=469284915493||PAN=GKPPQ9168V
+What does an Aadhaar number look like and how is it verified?	
+What is the difference between PAN and TAN in Indian taxation?	
+Employee SSN 027-47-5357 was entered twice in payroll, write an apology email to Mr. Miller.	US_SSN=027-47-5357||PERSON=Miller
+Summarise this ticket: user pooja.miller@yahoo.co.in says the app crashes. Contact them on +91 65452 27936.	EMAIL=pooja.miller@yahoo.co.in||PHONE=+91 65452 27936
+Our prod config has aws_access_key_id = AKIATXUHFJSHQTZU6DPX and it stopped working, why?	API_KEY=AKIATXUHFJSHQTZU6DPX
+The server at 192.52.166.149 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=192.52.166.149
+KYC pending for PAN TECPT5742O. Please verify the Aadhaar number 7213 3607 4276 before onboarding.	PAN=TECPT5742O||AADHAAR=7213 3607 4276
+Please wire the refund to IBAN FR645815820012A604372651334 for Aditya Singh.	IBAN=FR645815820012A604372651334||PERSON=Aditya Singh
+Calculate 1234567890 times 42 and explain the steps.	
+Format this address label for Neha Banerjee, phone 8927921791, GSTIN 07OKVCY0480D3Z0.	PERSON=Neha Banerjee||PHONE=8927921791||GSTIN=07OKVCY0480D3Z0
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+Revert commit 281ac6a855b33bc4991df537e622a967cd7f56fa and explain what a git revert does.	
+The server at 10.223.18.191 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=10.223.18.191
+Employee SSN 115-90-3466 was entered twice in payroll, write an apology email to Mr. Verma.	US_SSN=115-90-3466||PERSON=Verma
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-o9X0VqJUPwbMqWNEQq1FYESHyYIbMxPwwjBDXlpg'	API_KEY=sk-proj-o9X0VqJUPwbMqWNEQq1FYESHyYIbMxPwwjBDXlpg
+Dear Pooja Thomas, your loan application was approved. Card ending details: 6011-2174-6866-6510.	PERSON=Pooja Thomas||CREDIT_CARD=6011-2174-6866-6510
+The password field should require at least 12 characters, write the validation.	
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_coOYguvtvLEoaTwznDNWwGW4RjP0n6NGGI6w	API_KEY=ghp_coOYguvtvLEoaTwznDNWwGW4RjP0n6NGGI6w
+Explain the policy: employees must not share an api_key in chat.	
+Vendor GSTIN is 24DEXCZ0687G2ZB, bank IFSC SBIN0504505, account number 08929426177. Prepare the payment advice.	GSTIN=24DEXCZ0687G2ZB||IFSC=SBIN0504505||BANK_ACCOUNT=08929426177
+Employee SSN 483-63-4678 was entered twice in payroll, write an apology email to Mr. Brown.	US_SSN=483-63-4678||PERSON=Brown
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_ZK6QfPOfJBuWLhXkfR8Up3cofEqd82uFTksJ	API_KEY=ghp_ZK6QfPOfJBuWLhXkfR8Up3cofEqd82uFTksJ
+KYC pending for PAN NPSCM0360Z. Please verify the Aadhaar number 3225 8859 6353 before onboarding.	PAN=NPSCM0360Z||AADHAAR=3225 8859 6353
+Write SQL to find orders placed by sneha.patel@acme-corp.in using card 5149-7510-9313-6546.	EMAIL=sneha.patel@acme-corp.in||CREDIT_CARD=5149-7510-9313-6546
+Translate to Hindi: Hello Jennifer Reddy, your OTP was sent to +91-8177832110.	PERSON=Jennifer Reddy||PHONE=+91-8177832110
+client = OpenAI(api_key="sk-proj-UFuEboI040ABU6AFICEyZeYOOPbcq3ViB0kxud7E") gives an error, what am I doing wrong	API_KEY=sk-proj-UFuEboI040ABU6AFICEyZeYOOPbcq3ViB0kxud7E
+Write a haiku about the monsoon in Mumbai.	
+Customer support asked: why is my refund taking 7 days?	
+Revert commit 0deb5209ea27af223589943aba8ada60f6870a94 and explain what a git revert does.	
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+Please summarise the attached release notes for version 10.4.2.	
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-Ohbtd50MEW4LmAeDIQwbNYa3FZ32bHti19P72VlT'	API_KEY=sk-proj-Ohbtd50MEW4LmAeDIQwbNYa3FZ32bHti19P72VlT
+Compare these two applicants: Arjun Verma (PAN YDJCV7440L) and Daniel Johnson (PAN FFGPP1574G).	PERSON=Arjun Verma||PAN=YDJCV7440L||PERSON=Daniel Johnson||PAN=FFGPP1574G
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_f9oaNyikMktNV176bvP3pAza644ahzQHIxXm	API_KEY=ghp_f9oaNyikMktNV176bvP3pAza644ahzQHIxXm
+The db password is Summer@2026, can you write a connection snippet for Spring Boot?	PASSWORD=Summer@2026
+Our prod config has aws_access_key_id = AKIAXXFP7BCRHVPWIWCC and it stopped working, why?	API_KEY=AKIAXXFP7BCRHVPWIWCC
+Charge the corporate card 6521-3994-6028-5409 and send the invoice to neha.nair@yahoo.co.in.	CREDIT_CARD=6521-3994-6028-5409||EMAIL=neha.nair@yahoo.co.in
+Explain the policy: employees must not share an api_key in chat.	
+Write a haiku about the monsoon in Mumbai.	
+Our prod config has aws_access_key_id = AKIARS7OZ263MRSSJ33I and it stopped working, why?	API_KEY=AKIARS7OZ263MRSSJ33I
+My Aadhaar is 7071-9751-7206 and PAN is ASPPG2128T, which ITR form should I file?	AADHAAR=7071-9751-7206||PAN=ASPPG2128T
+Tracking number 4114878865096470 shows the parcel is stuck in transit, what should I say?	
+Explain the policy: employees must not share an api_key in chat.	
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_ieghgSYeCqyDidfwuCtnhtCBmqN3qd5jfi3d	API_KEY=ghp_ieghgSYeCqyDidfwuCtnhtCBmqN3qd5jfi3d
+Patient Neha Verma, Aadhaar 7180 6213 8343, was admitted on 3 March. Write the insurance claim summary.	PERSON=Neha Verma||AADHAAR=7180 6213 8343
+client = OpenAI(api_key="sk-proj-qo0Lo7PbJaOCByczH6T0LqRn3uJldDh2OzJahf49") gives an error, what am I doing wrong	API_KEY=sk-proj-qo0Lo7PbJaOCByczH6T0LqRn3uJldDh2OzJahf49
+Translate to Hindi: Hello Arjun Mehta, your OTP was sent to +91-7076797409.	PERSON=Arjun Mehta||PHONE=+91-7076797409
+Write SQL to find orders placed by david.nair@yahoo.co.in using card 5565 5677 7517 5676.	EMAIL=david.nair@yahoo.co.in||CREDIT_CARD=5565 5677 7517 5676
+client = OpenAI(api_key="sk-proj-MzC7xKdBdEb0y6CYT4JumYIuD5t8Xbvi0pcdI6Vc") gives an error, what am I doing wrong	API_KEY=sk-proj-MzC7xKdBdEb0y6CYT4JumYIuD5t8Xbvi0pcdI6Vc
+Call the US client at (608) 998-3372 tomorrow and confirm the demo.	PHONE=(608) 998-3372
+Compare these two applicants: Robert Mehta (PAN YWFCP3287M) and Kavita Verma (PAN CAUCI8364H).	PERSON=Robert Mehta||PAN=YWFCP3287M||PERSON=Kavita Verma||PAN=CAUCI8364H
+The db password is q9X!mR2#vL, can you write a connection snippet for Spring Boot?	PASSWORD=q9X!mR2#vL
+KYC pending for PAN OLLPL3058V. Please verify the Aadhaar number 3850 5046 6150 before onboarding.	PAN=OLLPL3058V||AADHAAR=3850 5046 6150
+Format this address label for Rohan Mehta, phone +91 61085 28191, GSTIN 32NOECC0088G1ZV.	PERSON=Rohan Mehta||PHONE=+91 61085 28191||GSTIN=32NOECC0088G1ZV
+Call the US client at (346) 874-3599 tomorrow and confirm the demo.	PHONE=(346) 874-3599
+Customer Meera Singh called about a failed refund. Aadhaar 7669 1953 1237, registered mobile +91-9310233717.	PERSON=Meera Singh||AADHAAR=7669 1953 1237||PHONE=+91-9310233717
+Our prod config has aws_access_key_id = AKIAAMATCZRIRTS2E4KG and it stopped working, why?	API_KEY=AKIAAMATCZRIRTS2E4KG
+Summarise this ticket: user priya.nair@outlook.com says the app crashes. Contact them on +91 69821 94572.	EMAIL=priya.nair@outlook.com||PHONE=+91 69821 94572
+My Aadhaar is 6608 1001 5621 and PAN is DZKCU9683G, which ITR form should I file?	AADHAAR=6608 1001 5621||PAN=DZKCU9683G
+Customer support asked: why is my refund taking 7 days?	
+Population of India is about 1450000000, write a short note on demographics.	
+Invoice INV-2026-000208 totals Rs 12,49,999. Write a reminder email to the finance team.	
+Batch 4884 6421 0024 failed quality checks, write the deviation report.	
+Format this address label for Sneha Reddy, phone +91 73536 36798, GSTIN 24FJQPZ0508W2ZX.	PERSON=Sneha Reddy||PHONE=+91 73536 36798||GSTIN=24FJQPZ0508W2ZX
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJN8znpGLqgs-CvkbF8Nbh0eNtHi_Ay8.9ViHTLXlK2O4uSnx2EqkSDmPEx9xNrTOgxfvZlbTWYA	JWT=eyJhbGciOiJIUzI1NiJ9.eyJN8znpGLqgs-CvkbF8Nbh0eNtHi_Ay8.9ViHTLXlK2O4uSnx2EqkSDmPEx9xNrTOgxfvZlbTWYA
+Our prod config has aws_access_key_id = AKIAMN63R64ATNP7UDZ2 and it stopped working, why?	API_KEY=AKIAMN63R64ATNP7UDZ2
+Charge the corporate card 4667706676469743 and send the invoice to sneha.brown@acme-corp.in.	CREDIT_CARD=4667706676469743||EMAIL=sneha.brown@acme-corp.in
+Vendor GSTIN is 30BMWCQ7524V2ZK, bank IFSC UTIB0615762, account number 02858932028029. Prepare the payment advice.	GSTIN=30BMWCQ7524V2ZK||IFSC=UTIB0615762||BANK_ACCOUNT=02858932028029
+Call the US client at (303) 266-9682 tomorrow and confirm the demo.	PHONE=(303) 266-9682
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-OAeozZHkY6AtIMHaPB23LY6QACdGaJdEhrefh0wX'	API_KEY=sk-proj-OAeozZHkY6AtIMHaPB23LY6QACdGaJdEhrefh0wX
+Charge the corporate card 373901107240051 and send the invoice to jennifer.williams@example.org.	CREDIT_CARD=373901107240051||EMAIL=jennifer.williams@example.org
+Explain how the Luhn algorithm validates card numbers in general.	
+KYC pending for PAN SQTPC9857J. Please verify the Aadhaar number 3628 2038 7807 before onboarding.	PAN=SQTPC9857J||AADHAAR=3628 2038 7807
+client = OpenAI(api_key="sk-proj-NEJ9FpSCQj9FX1Qbqd38X904eh9icH3OMWEPH2Xp") gives an error, what am I doing wrong	API_KEY=sk-proj-NEJ9FpSCQj9FX1Qbqd38X904eh9icH3OMWEPH2Xp
+KYC pending for PAN DVSCL9720G. Please verify the Aadhaar number 503632118644 before onboarding.	PAN=DVSCL9720G||AADHAAR=503632118644
+Population of India is about 1450000000, write a short note on demographics.	
+Employee SSN 622-10-2602 was entered twice in payroll, write an apology email to Mr. Nair.	US_SSN=622-10-2602||PERSON=Nair
+My Aadhaar is 9643 8327 9106 and PAN is CDDPZ4784A, which ITR form should I file?	AADHAAR=9643 8327 9106||PAN=CDDPZ4784A
+Translate to Hindi: Hello Neha Johnson, your OTP was sent to +91 79108 21156.	PERSON=Neha Johnson||PHONE=+91 79108 21156
+Please summarise the attached release notes for version 10.4.2.	
+Ms. Singh reported that her account number 25769879791 shows a duplicate debit.	PERSON=Singh||BANK_ACCOUNT=25769879791
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+Customer Meera Verma called about a failed refund. Aadhaar 5704 1512 8544, registered mobile 9282648343.	PERSON=Meera Verma||AADHAAR=5704 1512 8544||PHONE=9282648343
+Dear Aditya Sharma, your loan application was approved. Card ending details: 6521975940103435.	PERSON=Aditya Sharma||CREDIT_CARD=6521975940103435
+Translate to Hindi: Hello Arjun Gupta, your OTP was sent to +91-9092938918.	PERSON=Arjun Gupta||PHONE=+91-9092938918
+Write a haiku about the monsoon in Mumbai.	
+Format this address label for Aditya Thomas, phone 6456356067, GSTIN 31QSACD1632F2ZY.	PERSON=Aditya Thomas||PHONE=6456356067||GSTIN=31QSACD1632F2ZY
+client = OpenAI(api_key="sk-proj-3y4mXglcGIaJgjqyjBoASnGrCRchF58fMeBQMy6T") gives an error, what am I doing wrong	API_KEY=sk-proj-3y4mXglcGIaJgjqyjBoASnGrCRchF58fMeBQMy6T
+Please summarise the attached release notes for version 10.4.2.	
+Patient David Reddy, Aadhaar 6271-1268-2184, was admitted on 3 March. Write the insurance claim summary.	PERSON=David Reddy||AADHAAR=6271-1268-2184
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+Employee SSN 293-76-6740 was entered twice in payroll, write an apology email to Mr. Banerjee.	US_SSN=293-76-6740||PERSON=Banerjee
+Patient Emily Singh, Aadhaar 6746-1976-7503, was admitted on 3 March. Write the insurance claim summary.	PERSON=Emily Singh||AADHAAR=6746-1976-7503
+The db password is q9X!mR2#vL, can you write a connection snippet for Spring Boot?	PASSWORD=q9X!mR2#vL
+Spoke to Vikram Brown today; her alternate number is (949) 339-8457 and email vikram.brown@acme-corp.in.	PERSON=Vikram Brown||PHONE=(949) 339-8457||EMAIL=vikram.brown@acme-corp.in
+Spoke to Pooja Williams today; her alternate number is (887) 494-6063 and email pooja.williams@outlook.com.	PERSON=Pooja Williams||PHONE=(887) 494-6063||EMAIL=pooja.williams@outlook.com
+Call the US client at (702) 310-4206 tomorrow and confirm the demo.	PHONE=(702) 310-4206
+Spoke to Rohan Kulkarni today; her alternate number is (441) 517-3537 and email rohan.kulkarni@example.org.	PERSON=Rohan Kulkarni||PHONE=(441) 517-3537||EMAIL=rohan.kulkarni@example.org
+Population of India is about 1450000000, write a short note on demographics.	
+Write SQL to find orders placed by pooja.miller@outlook.com using card 5558-0481-9987-1611.	EMAIL=pooja.miller@outlook.com||CREDIT_CARD=5558-0481-9987-1611
+Ms. Williams reported that her account number 675672211015 shows a duplicate debit.	PERSON=Williams||BANK_ACCOUNT=675672211015
+Summarise this ticket: user aditya.williams@example.org says the app crashes. Contact them on +91-6852403797.	EMAIL=aditya.williams@example.org||PHONE=+91-6852403797
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJcVqCFw59KIRRlztejiElzldTvXTFpt.xg4TtvXOYfyJ0VoeHn3li2HeyLpaJtl4oRPf1EmFtzX	JWT=eyJhbGciOiJIUzI1NiJ9.eyJcVqCFw59KIRRlztejiElzldTvXTFpt.xg4TtvXOYfyJ0VoeHn3li2HeyLpaJtl4oRPf1EmFtzX
+Draft a reply to Rahul Anderson (rahul.anderson@example.org) explaining why their card 5599392299090024 was declined.	PERSON=Rahul Anderson||EMAIL=rahul.anderson@example.org||CREDIT_CARD=5599392299090024
+Call the US client at (850) 484-9523 tomorrow and confirm the demo.	PHONE=(850) 484-9523
+Please wire the refund to IBAN DE79 2497 5478 7621 9574 03 for Priya Thomas.	IBAN=DE79 2497 5478 7621 9574 03||PERSON=Priya Thomas
+client = OpenAI(api_key="sk-proj-RPp1sI2GtLRjYDTBr0UqIgXeobExjYVwBFanZdH6") gives an error, what am I doing wrong	API_KEY=sk-proj-RPp1sI2GtLRjYDTBr0UqIgXeobExjYVwBFanZdH6
+Summarise this ticket: user ananya.mehta@yahoo.co.in says the app crashes. Contact them on +91-8295844699.	EMAIL=ananya.mehta@yahoo.co.in||PHONE=+91-8295844699
+Ms. Patel reported that her account number 48183893327456 shows a duplicate debit.	PERSON=Patel||BANK_ACCOUNT=48183893327456
+Translate to Hindi: Hello Deepika Singh, your OTP was sent to +91 67316 58254.	PERSON=Deepika Singh||PHONE=+91 67316 58254
+Call the US client at (290) 947-2184 tomorrow and confirm the demo.	PHONE=(290) 947-2184
+Write SQL to find orders placed by sneha.mehta@acme-corp.in using card 5126241453674259.	EMAIL=sneha.mehta@acme-corp.in||CREDIT_CARD=5126241453674259
+The db password is Pa55w0rd!x, can you write a connection snippet for Spring Boot?	PASSWORD=Pa55w0rd!x
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJYojseThfnqeAT6GnZWECUbpA0PoPCm.dYiDeBCo_CQqJvcHBmrO0DsmGjvjlsI-kheu6HjRHpA	JWT=eyJhbGciOiJIUzI1NiJ9.eyJYojseThfnqeAT6GnZWECUbpA0PoPCm.dYiDeBCo_CQqJvcHBmrO0DsmGjvjlsI-kheu6HjRHpA
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_LyLj5cPMaw7qMMYTrkShxOLWiWHburvg9LCu	API_KEY=ghp_LyLj5cPMaw7qMMYTrkShxOLWiWHburvg9LCu
+Our request id 88ef704a-fb88-a047-0741-c13e3826ec16 keeps timing out at the gateway, how do I add retries?	
+Ms. Gupta reported that her account number 40497445006450 shows a duplicate debit.	PERSON=Gupta||BANK_ACCOUNT=40497445006450
+Customer Robert Sharma called about a failed refund. Aadhaar 8372 7499 1244, registered mobile +91-8538449066.	PERSON=Robert Sharma||AADHAAR=8372 7499 1244||PHONE=+91-8538449066
+Charge the corporate card 4661 4837 3383 0475 and send the invoice to priya.patel@yahoo.co.in.	CREDIT_CARD=4661 4837 3383 0475||EMAIL=priya.patel@yahoo.co.in
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+What is the difference between PAN and TAN in Indian taxation?	
+Customer support asked: why is my refund taking 7 days?	
+The password field should require at least 12 characters, write the validation.	
+Compare these two applicants: Sanjay Singh (PAN MXCCS0450V) and Rahul Williams (PAN MHYPO7547V).	PERSON=Sanjay Singh||PAN=MXCCS0450V||PERSON=Rahul Williams||PAN=MHYPO7547V
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_Jg6UalztcVTBz8agDG0cthZDBs0AhflJ7qqz	API_KEY=ghp_Jg6UalztcVTBz8agDG0cthZDBs0AhflJ7qqz
+Charge the corporate card 6521102278518304 and send the invoice to pooja.mehta@yahoo.co.in.	CREDIT_CARD=6521102278518304||EMAIL=pooja.mehta@yahoo.co.in
+The password field should require at least 12 characters, write the validation.	
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJ3MCn-T7gry-gNHxp5P1McGlvbTnJl0.jAXQtnik9S-VK1goUi-57bonslibw9Qhc2a5Agwm5IV	JWT=eyJhbGciOiJIUzI1NiJ9.eyJ3MCn-T7gry-gNHxp5P1McGlvbTnJl0.jAXQtnik9S-VK1goUi-57bonslibw9Qhc2a5Agwm5IV
+Dear Emily Gupta, your loan application was approved. Card ending details: 6521828082868747.	PERSON=Emily Gupta||CREDIT_CARD=6521828082868747
+Ms. Banerjee reported that her account number 63537286389766 shows a duplicate debit.	PERSON=Banerjee||BANK_ACCOUNT=63537286389766
+Translate to Hindi: Hello Ananya Singh, your OTP was sent to +91 73658 34563.	PERSON=Ananya Singh||PHONE=+91 73658 34563
+Dear Karan Nair, your loan application was approved. Card ending details: 5158 5343 7455 9224.	PERSON=Karan Nair||CREDIT_CARD=5158 5343 7455 9224
+Call the US client at (939) 807-4341 tomorrow and confirm the demo.	PHONE=(939) 807-4341
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+The db password is q9X!mR2#vL, can you write a connection snippet for Spring Boot?	PASSWORD=q9X!mR2#vL
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJkDycfaOS2FZQQ4iIDDHEDHBGNKXY73.TZkbpgfraiv-K0DWx7oHlkcLGJBMqEo2m6kNsTE978v	JWT=eyJhbGciOiJIUzI1NiJ9.eyJkDycfaOS2FZQQ4iIDDHEDHBGNKXY73.TZkbpgfraiv-K0DWx7oHlkcLGJBMqEo2m6kNsTE978v
+Our request id db0463c6-8200-f626-0f7f-ca217519759d keeps timing out at the gateway, how do I add retries?	
+Call the US client at (507) 638-7101 tomorrow and confirm the demo.	PHONE=(507) 638-7101
+Please summarise the attached release notes for version 10.4.2.	
+Please wire the refund to IBAN GB87WEST89306081165370 for Michael Johnson.	IBAN=GB87WEST89306081165370||PERSON=Michael Johnson
+Spoke to Rohan Brown today; her alternate number is (204) 591-0990 and email rohan.brown@yahoo.co.in.	PERSON=Rohan Brown||PHONE=(204) 591-0990||EMAIL=rohan.brown@yahoo.co.in
+Please wire the refund to IBAN FR07 1063 0302 51A6 4668 2630 936 for Pooja Brown.	IBAN=FR07 1063 0302 51A6 4668 2630 936||PERSON=Pooja Brown
+The server at 192.252.82.207 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=192.252.82.207
+Explain how the Luhn algorithm validates card numbers in general.	
+client = OpenAI(api_key="sk-proj-nF6xpq0QoyA8FmJ0K1uaeavozOK0GdcsYUQPiFwM") gives an error, what am I doing wrong	API_KEY=sk-proj-nF6xpq0QoyA8FmJ0K1uaeavozOK0GdcsYUQPiFwM
+The db password is Pa55w0rd!x, can you write a connection snippet for Spring Boot?	PASSWORD=Pa55w0rd!x
+Dear Deepika Banerjee, your loan application was approved. Card ending details: 6521-6085-0590-2319.	PERSON=Deepika Banerjee||CREDIT_CARD=6521-6085-0590-2319
+Dear Sarah Gupta, your loan application was approved. Card ending details: 378935470308348.	PERSON=Sarah Gupta||CREDIT_CARD=378935470308348
+Our prod config has aws_access_key_id = AKIA4RPB562JQWC5VD5R and it stopped working, why?	API_KEY=AKIA4RPB562JQWC5VD5R
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_2HTJ4FByggtayhETBg0AjwQPHv4gDPuGKe3W	API_KEY=ghp_2HTJ4FByggtayhETBg0AjwQPHv4gDPuGKe3W
+Format this address label for Vikram Singh, phone 6452745571, GSTIN 15OLCCC9229K3ZE.	PERSON=Vikram Singh||PHONE=6452745571||GSTIN=15OLCCC9229K3ZE
+Draft a reply to Ananya Anderson (ananya.anderson@yahoo.co.in) explaining why their card 2221-2271-2775-9916 was declined.	PERSON=Ananya Anderson||EMAIL=ananya.anderson@yahoo.co.in||CREDIT_CARD=2221-2271-2775-9916
+KYC pending for PAN XBQCM0794A. Please verify the Aadhaar number 7109 5714 8397 before onboarding.	PAN=XBQCM0794A||AADHAAR=7109 5714 8397
+Customer Neha Reddy called about a failed refund. Aadhaar 7566 4991 3509, registered mobile +91-9248267950.	PERSON=Neha Reddy||AADHAAR=7566 4991 3509||PHONE=+91-9248267950
+Translate to Hindi: Hello Vikram Patel, your OTP was sent to 9056168898.	PERSON=Vikram Patel||PHONE=9056168898
+Order 7059 1842 0515 was delivered late, draft a polite apology to the customer.	
+Translate to Hindi: Hello Emily Verma, your OTP was sent to +91 60680 00056.	PERSON=Emily Verma||PHONE=+91 60680 00056
+Customer Jennifer Kulkarni called about a failed refund. Aadhaar 915660506988, registered mobile +91-6009098674.	PERSON=Jennifer Kulkarni||AADHAAR=915660506988||PHONE=+91-6009098674
+Fix this script, it fails with 401: export GITHUB_TOKEN=ghp_mqF02XsfYOz4EZPvJJC7iF8e97oEEWopfzzU	API_KEY=ghp_mqF02XsfYOz4EZPvJJC7iF8e97oEEWopfzzU
+Dear Daniel Singh, your loan application was approved. Card ending details: 5101234400642528.	PERSON=Daniel Singh||CREDIT_CARD=5101234400642528
+Spoke to Michael Williams today; her alternate number is (236) 444-3641 and email michael.williams@acme-corp.in.	PERSON=Michael Williams||PHONE=(236) 444-3641||EMAIL=michael.williams@acme-corp.in
+The db password is Tr0ub4dor&3, can you write a connection snippet for Spring Boot?	PASSWORD=Tr0ub4dor&3
+Explain the policy: employees must not share an api_key in chat.	
+Please wire the refund to IBAN DE41057804739729092077 for Priya Banerjee.	IBAN=DE41057804739729092077||PERSON=Priya Banerjee
+Employee SSN 450-91-8071 was entered twice in payroll, write an apology email to Mr. Nair.	US_SSN=450-91-8071||PERSON=Nair
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJ1kpeppNWICYQZxMhYHo9Rc4KyHISDT.gm31x3uO_h2OMAGqTxopJrtoKO-FeOVEfexhNU-GM1L	JWT=eyJhbGciOiJIUzI1NiJ9.eyJ1kpeppNWICYQZxMhYHo9Rc4KyHISDT.gm31x3uO_h2OMAGqTxopJrtoKO-FeOVEfexhNU-GM1L
+Spoke to Arjun Reddy today; her alternate number is (946) 900-2541 and email arjun.reddy@outlook.com.	PERSON=Arjun Reddy||PHONE=(946) 900-2541||EMAIL=arjun.reddy@outlook.com
+Employee SSN 317-49-3421 was entered twice in payroll, write an apology email to Mr. Johnson.	US_SSN=317-49-3421||PERSON=Johnson
+Order 856269519865 was delivered late, draft a polite apology to the customer.	
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+Calculate 1234567890 times 42 and explain the steps.	
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+Translate to Hindi: Hello Ananya Gupta, your OTP was sent to +91-6942522189.	PERSON=Ananya Gupta||PHONE=+91-6942522189
+Charge the corporate card 5528303478683477 and send the invoice to sanjay.iyer@acme-corp.in.	CREDIT_CARD=5528303478683477||EMAIL=sanjay.iyer@acme-corp.in
+My Aadhaar is 7656 9729 7537 and PAN is CLSCY4062P, which ITR form should I file?	AADHAAR=7656 9729 7537||PAN=CLSCY4062P
+Ms. Sharma reported that her account number 847188359649 shows a duplicate debit.	PERSON=Sharma||BANK_ACCOUNT=847188359649
+Customer support asked: why is my refund taking 7 days?	
+Draft a reply to Priya Thomas (priya.thomas@example.org) explaining why their card 376184477861361 was declined.	PERSON=Priya Thomas||EMAIL=priya.thomas@example.org||CREDIT_CARD=376184477861361
+Translate to Hindi: Hello Michael Anderson, your OTP was sent to +91-8239328224.	PERSON=Michael Anderson||PHONE=+91-8239328224
+Summarise this ticket: user sneha.reddy@outlook.com says the app crashes. Contact them on +91-6798128271.	EMAIL=sneha.reddy@outlook.com||PHONE=+91-6798128271
+Please wire the refund to IBAN DE50390845600324603865 for David Iyer.	IBAN=DE50390845600324603865||PERSON=David Iyer
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+Order 7075 7322 8151 was delivered late, draft a polite apology to the customer.	
+Format this address label for Kavita Nair, phone +91 74562 20188, GSTIN 25OSZPA3737X1Z6.	PERSON=Kavita Nair||PHONE=+91 74562 20188||GSTIN=25OSZPA3737X1Z6
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-dzsPOTrwLGs1dl96eaW3BAod1NK2n1z94GQrGF7Q'	API_KEY=sk-proj-dzsPOTrwLGs1dl96eaW3BAod1NK2n1z94GQrGF7Q
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+Vendor GSTIN is 20APXPW2277F1ZG, bank IFSC SBIN0900240, account number 75728873938451. Prepare the payment advice.	GSTIN=20APXPW2277F1ZG||IFSC=SBIN0900240||BANK_ACCOUNT=75728873938451
+Patient Daniel Singh, Aadhaar 941527650795, was admitted on 3 March. Write the insurance claim summary.	PERSON=Daniel Singh||AADHAAR=941527650795
+client = OpenAI(api_key="sk-proj-o8K87GHN5SNV1WyVLrT3qayF3NZYZlNPkOTe9W7v") gives an error, what am I doing wrong	API_KEY=sk-proj-o8K87GHN5SNV1WyVLrT3qayF3NZYZlNPkOTe9W7v
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Write SQL to find orders placed by kavita.anderson@gmail.com using card 4758 4037 5838 2313.	EMAIL=kavita.anderson@gmail.com||CREDIT_CARD=4758 4037 5838 2313
+Vendor GSTIN is 13IYXCD9238E1ZQ, bank IFSC ICIC0930257, account number 07225508670272. Prepare the payment advice.	GSTIN=13IYXCD9238E1ZQ||IFSC=ICIC0930257||BANK_ACCOUNT=07225508670272
+Summarise this ticket: user emily.verma@example.org says the app crashes. Contact them on 9165515188.	EMAIL=emily.verma@example.org||PHONE=9165515188
+My Aadhaar is 7338 5865 2191 and PAN is CCLCC3576S, which ITR form should I file?	AADHAAR=7338 5865 2191||PAN=CCLCC3576S
+Please wire the refund to IBAN DE28414435370041291009 for Sneha Patel.	IBAN=DE28414435370041291009||PERSON=Sneha Patel
+Draft a reply to Neha Sharma (neha.sharma@outlook.com) explaining why their card 374266693723764 was declined.	PERSON=Neha Sharma||EMAIL=neha.sharma@outlook.com||CREDIT_CARD=374266693723764
+What is the difference between PAN and TAN in Indian taxation?	
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-l7wErPPtuxpWzcJ8Ct0Kmg9twCpNGCQy79UR8TAf'	API_KEY=sk-proj-l7wErPPtuxpWzcJ8Ct0Kmg9twCpNGCQy79UR8TAf
+Summarise this ticket: user michael.gupta@yahoo.co.in says the app crashes. Contact them on +91-6601170860.	EMAIL=michael.gupta@yahoo.co.in||PHONE=+91-6601170860
+Draft a reply to Robert Thomas (robert.thomas@acme-corp.in) explaining why their card 6011-2614-7734-3554 was declined.	PERSON=Robert Thomas||EMAIL=robert.thomas@acme-corp.in||CREDIT_CARD=6011-2614-7734-3554
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-pwscqLqaauWDmhDPY8k34pMrlkP0iAIoLXiknDHF'	API_KEY=sk-proj-pwscqLqaauWDmhDPY8k34pMrlkP0iAIoLXiknDHF
+My Aadhaar is 4245 5983 2837 and PAN is BBDCA2634R, which ITR form should I file?	AADHAAR=4245 5983 2837||PAN=BBDCA2634R
+client = OpenAI(api_key="sk-proj-50qDqAA4meRCkskcvs5kGYV5WzH9Bbv49DWZa91b") gives an error, what am I doing wrong	API_KEY=sk-proj-50qDqAA4meRCkskcvs5kGYV5WzH9Bbv49DWZa91b
+client = OpenAI(api_key="sk-proj-KXFE4oxryRx5igmerRbHeLev5OqW5Q9feOWgtAHz") gives an error, what am I doing wrong	API_KEY=sk-proj-KXFE4oxryRx5igmerRbHeLev5OqW5Q9feOWgtAHz
+Revert commit a3274c1fb3f25a11e837ef15bc6f1392a4ab5d89 and explain what a git revert does.	
+Tracking number 4240037519293955 shows the parcel is stuck in transit, what should I say?	
+Invoice INV-2026-000914 totals Rs 12,49,999. Write a reminder email to the finance team.	
+Vendor GSTIN is 32BYMPU4076R2ZE, bank IFSC SBIN0843415, account number 748061318756. Prepare the payment advice.	GSTIN=32BYMPU4076R2ZE||IFSC=SBIN0843415||BANK_ACCOUNT=748061318756
+Spoke to Vikram Brown today; her alternate number is (674) 821-2513 and email vikram.brown@gmail.com.	PERSON=Vikram Brown||PHONE=(674) 821-2513||EMAIL=vikram.brown@gmail.com
+What does an Aadhaar number look like and how is it verified?	
+Patient Arjun Gupta, Aadhaar 4705 0232 0200, was admitted on 3 March. Write the insurance claim summary.	PERSON=Arjun Gupta||AADHAAR=4705 0232 0200
+The db password is Tr0ub4dor&3, can you write a connection snippet for Spring Boot?	PASSWORD=Tr0ub4dor&3
+What does an Aadhaar number look like and how is it verified?	
+Draft a reply to Deepika Anderson (deepika.anderson@outlook.com) explaining why their card 2221 8347 0289 4511 was declined.	PERSON=Deepika Anderson||EMAIL=deepika.anderson@outlook.com||CREDIT_CARD=2221 8347 0289 4511
+What does an Aadhaar number look like and how is it verified?	
+Invoice INV-2026-000287 totals Rs 12,49,999. Write a reminder email to the finance team.	
+The meeting is on 14/10/2026 at 15:30 in room 4B, send a calendar invite.	
+The db password is Kavya@1993, can you write a connection snippet for Spring Boot?	PASSWORD=Kavya@1993
+Please wire the refund to IBAN DE43 7798 4176 9378 3012 86 for Karan Singh.	IBAN=DE43 7798 4176 9378 3012 86||PERSON=Karan Singh
+Our prod config has aws_access_key_id = AKIACNWDJQJCCRBP7KZD and it stopped working, why?	API_KEY=AKIACNWDJQJCCRBP7KZD
+The server at 192.204.135.210 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=192.204.135.210
+Format this address label for Emily Thomas, phone +91-6082126312, GSTIN 11PKBPR4348F1Z1.	PERSON=Emily Thomas||PHONE=+91-6082126312||GSTIN=11PKBPR4348F1Z1
+KYC pending for PAN CCHCA4055B. Please verify the Aadhaar number 6974-8145-3023 before onboarding.	PAN=CCHCA4055B||AADHAAR=6974-8145-3023
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-QJtOli0DtwcaC5b19uHNJhUWJaITG8SIIjUNPB0L'	API_KEY=sk-proj-QJtOli0DtwcaC5b19uHNJhUWJaITG8SIIjUNPB0L
+The db password is Pa55w0rd!x, can you write a connection snippet for Spring Boot?	PASSWORD=Pa55w0rd!x
+What does an Aadhaar number look like and how is it verified?	
+My Aadhaar is 4481-0001-2138 and PAN is PLHCK6480N, which ITR form should I file?	AADHAAR=4481-0001-2138||PAN=PLHCK6480N
+Call the US client at (550) 688-2242 tomorrow and confirm the demo.	PHONE=(550) 688-2242
+Our prod config has aws_access_key_id = AKIACOLUIZN3CU6N32TG and it stopped working, why?	API_KEY=AKIACOLUIZN3CU6N32TG
+My Aadhaar is 7670 0616 2500 and PAN is OKPCS3599R, which ITR form should I file?	AADHAAR=7670 0616 2500||PAN=OKPCS3599R
+Employee SSN 815-99-5146 was entered twice in payroll, write an apology email to Mr. Banerjee.	US_SSN=815-99-5146||PERSON=Banerjee
+Explain how the Luhn algorithm validates card numbers in general.	
+Revert commit bb0195350f777d6f4064f8cd207dcd19e2e1e0f7 and explain what a git revert does.	
+Order 416792165772 was delivered late, draft a polite apology to the customer.	
+What is the difference between PAN and TAN in Indian taxation?	
+Calculate 1234567890 times 42 and explain the steps.	
+Calculate 1234567890 times 42 and explain the steps.	
+Explain the policy: employees must not share an api_key in chat.	
+The server at 10.92.249.239 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=10.92.249.239
+Dear Neha Iyer, your loan application was approved. Card ending details: 6521 1341 8848 2255.	PERSON=Neha Iyer||CREDIT_CARD=6521 1341 8848 2255
+The server at 172.157.195.38 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=172.157.195.38
+Decode this token for me: eyJhbGciOiJIUzI1NiJ9.eyJ2_E9rUvtTQJXul5U2Eau_w4JPXDdTi.72ZqNAHA2eB0rVuc0Y6g_mvvcflsM0-TCFaVHmdAmd9	JWT=eyJhbGciOiJIUzI1NiJ9.eyJ2_E9rUvtTQJXul5U2Eau_w4JPXDdTi.72ZqNAHA2eB0rVuc0Y6g_mvvcflsM0-TCFaVHmdAmd9
+Set the timeout to 30000 ms and the pool size to 50 in application.yml.	
+Compare these two applicants: Rahul Gupta (PAN HKWPY3257U) and Priya Gupta (PAN TUEPH0040C).	PERSON=Rahul Gupta||PAN=HKWPY3257U||PERSON=Priya Gupta||PAN=TUEPH0040C
+Draft a reply to Rohan Kulkarni (rohan.kulkarni@example.org) explaining why their card 2221 2000 8762 0972 was declined.	PERSON=Rohan Kulkarni||EMAIL=rohan.kulkarni@example.org||CREDIT_CARD=2221 2000 8762 0972
+Write SQL to find orders placed by vikram.reddy@gmail.com using card 6521885955686135.	EMAIL=vikram.reddy@gmail.com||CREDIT_CARD=6521885955686135
+The server at 172.234.17.24 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=172.234.17.24
+Calculate 1234567890 times 42 and explain the steps.	
+Summarise this ticket: user pooja.mehta@outlook.com says the app crashes. Contact them on +91-6268256828.	EMAIL=pooja.mehta@outlook.com||PHONE=+91-6268256828
+Our prod config has aws_access_key_id = AKIATSGYUPMDC7XEPOHG and it stopped working, why?	API_KEY=AKIATSGYUPMDC7XEPOHG
+Our prod config has aws_access_key_id = AKIAHERSR522SEHHDUXG and it stopped working, why?	API_KEY=AKIAHERSR522SEHHDUXG
+Employee SSN 344-32-9948 was entered twice in payroll, write an apology email to Mr. Mehta.	US_SSN=344-32-9948||PERSON=Mehta
+Please wire the refund to IBAN GB55WEST97587933038801 for Ananya Thomas.	IBAN=GB55WEST97587933038801||PERSON=Ananya Thomas
+Customer Meera Williams called about a failed refund. Aadhaar 202381678308, registered mobile 9545895605.	PERSON=Meera Williams||AADHAAR=202381678308||PHONE=9545895605
+Charge the corporate card 6521-9110-7163-9046 and send the invoice to neha.anderson@yahoo.co.in.	CREDIT_CARD=6521-9110-7163-9046||EMAIL=neha.anderson@yahoo.co.in
+Our request id a1b7ba24-8c51-51c6-f540-e48da8ac1915 keeps timing out at the gateway, how do I add retries?	
+Customer support asked: why is my refund taking 7 days?	
+Translate to Hindi: Hello Aditya Verma, your OTP was sent to +91 99714 49130.	PERSON=Aditya Verma||PHONE=+91 99714 49130
+Write SQL to find orders placed by emily.nair@example.org using card 5196-3487-2616-9390.	EMAIL=emily.nair@example.org||CREDIT_CARD=5196-3487-2616-9390
+Invoice INV-2026-000553 totals Rs 12,49,999. Write a reminder email to the finance team.	
+Vendor GSTIN is 12THMCW1784V1ZE, bank IFSC SBIN0726182, account number 17432571389. Prepare the payment advice.	GSTIN=12THMCW1784V1ZE||IFSC=SBIN0726182||BANK_ACCOUNT=17432571389
+Use this key in the curl example: -H 'Authorization: Bearer sk-proj-OhnxdeXObYFeiILsCkjnz2lIZgzwXBXTf53wXiCM'	API_KEY=sk-proj-OhnxdeXObYFeiILsCkjnz2lIZgzwXBXTf53wXiCM
+Population of India is about 1450000000, write a short note on demographics.	
+Please wire the refund to IBAN FR073911010412A482527907207 for David Sharma.	IBAN=FR073911010412A482527907207||PERSON=David Sharma
+Write SQL to find orders placed by rohan.mehta@gmail.com using card 2221726400231451.	EMAIL=rohan.mehta@gmail.com||CREDIT_CARD=2221726400231451
+Vendor GSTIN is 33QWLCE5076L2ZJ, bank IFSC HDFC0462968, account number 20082817195754. Prepare the payment advice.	GSTIN=33QWLCE5076L2ZJ||IFSC=HDFC0462968||BANK_ACCOUNT=20082817195754
+Tracking number 4417402174785121 shows the parcel is stuck in transit, what should I say?	
+Revert commit f8b3d25f47936e26056d4ca0b5a5cccc72cbdec0 and explain what a git revert does.	
+KYC pending for PAN DDTPF1996W. Please verify the Aadhaar number 5539 4578 0163 before onboarding.	PAN=DDTPF1996W||AADHAAR=5539 4578 0163
+Ms. Williams reported that her account number 13549433738737 shows a duplicate debit.	PERSON=Williams||BANK_ACCOUNT=13549433738737
+Ms. Anderson reported that her account number 126273925074 shows a duplicate debit.	PERSON=Anderson||BANK_ACCOUNT=126273925074
+Vendor GSTIN is 23HNTCO0430X3ZO, bank IFSC SBIN0237786, account number 392606916781. Prepare the payment advice.	GSTIN=23HNTCO0430X3ZO||IFSC=SBIN0237786||BANK_ACCOUNT=392606916781
+Write a haiku about the monsoon in Mumbai.	
+Our API returns HTTP 503 at 12:45:10, summarise likely causes.	
+What is the difference between PAN and TAN in Indian taxation?	
+Our prod config has aws_access_key_id = AKIA6RYPACIBSNXNHR4Z and it stopped working, why?	API_KEY=AKIA6RYPACIBSNXNHR4Z
+What is the difference between PAN and TAN in Indian taxation?	
+Patient Pooja Patel, Aadhaar 580820957391, was admitted on 3 March. Write the insurance claim summary.	PERSON=Pooja Patel||AADHAAR=580820957391
+Spoke to Sarah Kulkarni today; her alternate number is (432) 449-5101 and email sarah.kulkarni@example.org.	PERSON=Sarah Kulkarni||PHONE=(432) 449-5101||EMAIL=sarah.kulkarni@example.org
+Call the US client at (203) 573-1399 tomorrow and confirm the demo.	PHONE=(203) 573-1399
+What does an Aadhaar number look like and how is it verified?	
+Format this address label for Deepika Thomas, phone +91-9400737399, GSTIN 09DYTPA8212W3Z9.	PERSON=Deepika Thomas||PHONE=+91-9400737399||GSTIN=09DYTPA8212W3Z9
+Upgrade the library from v2.3.1.4 to v2.4.0 and list breaking changes.	
+Calculate 1234567890 times 42 and explain the steps.	
+Write SQL to find orders placed by meera.singh@outlook.com using card 5135 9999 1933 0811.	EMAIL=meera.singh@outlook.com||CREDIT_CARD=5135 9999 1933 0811
+Our prod config has aws_access_key_id = AKIAEJJJP54HSV575O5P and it stopped working, why?	API_KEY=AKIAEJJJP54HSV575O5P
+Ms. Nair reported that her account number 74651545805 shows a duplicate debit.	PERSON=Nair||BANK_ACCOUNT=74651545805
+The password field should require at least 12 characters, write the validation.	
+Batch 2931 4351 2058 failed quality checks, write the deviation report.	
+Vendor GSTIN is 26OXNPA9107D2ZA, bank IFSC HDFC0172153, account number 44408107872755. Prepare the payment advice.	GSTIN=26OXNPA9107D2ZA||IFSC=HDFC0172153||BANK_ACCOUNT=44408107872755
+The db password is Summer@2026, can you write a connection snippet for Spring Boot?	PASSWORD=Summer@2026
+Tracking number 4877644249128991 shows the parcel is stuck in transit, what should I say?	
+Call the US client at (965) 734-7311 tomorrow and confirm the demo.	PHONE=(965) 734-7311
+The server at 10.86.147.28 is refusing SSH connections after the update, help me debug.	IP_ADDRESS=10.86.147.28

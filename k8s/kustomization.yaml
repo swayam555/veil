@@ -1,0 +1,6 @@
+# Default install:  kubectl apply -k k8s/        (CPU-based autoscaling)
+# With KEDA:        kubectl apply -k k8s/keda    (insight-service scales on Kafka consumer lag)
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - base

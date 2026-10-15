@@ -1,0 +1,5 @@
+.veil-notice {
+  position: fixed; right: 20px; bottom: 20px; z-index: 2147483647; max-width: 360px;
+  background: #0d1117; color: #fff; border-radius: 10px; padding: 10px 14px; font: 13px/1.4 ui-sans-serif, system-ui, sans-serif;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}

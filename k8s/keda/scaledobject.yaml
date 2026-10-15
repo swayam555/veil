@@ -1,0 +1,18 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: insight-service
+  namespace: veil
+spec:
+  scaleTargetRef:
+    name: insight-service
+  minReplicaCount: 2
+  # One consumer per partition is the useful maximum (veil.audit has 6 partitions).
+  maxReplicaCount: 6
+  triggers:
+    - type: kafka
+      metadata:
+        bootstrapServers: kafka.veil.svc:9092
+        consumerGroup: insight-service
+        topic: veil.audit
+        lagThreshold: "500"

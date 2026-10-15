@@ -1,0 +1,17 @@
+# Optional overlay for clusters with KEDA (https://keda.sh): scale insight-service on Kafka consumer lag
+# instead of CPU, which is the signal that actually matters for an event consumer.
+#   kubectl apply -k k8s/keda
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - ../base
+  - scaledobject.yaml
+patches:
+  # KEDA manages its own HPA for insight-service, so remove the CPU-based one.
+  - target: { kind: HorizontalPodAutoscaler, name: insight-service }
+    patch: |
+      $patch: delete
+      apiVersion: autoscaling/v2
+      kind: HorizontalPodAutoscaler
+      metadata:
+        name: insight-service

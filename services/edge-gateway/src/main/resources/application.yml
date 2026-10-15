@@ -1,0 +1,101 @@
+spring:
+  application:
+    name: edge-gateway
+  data:
+    redis:
+      host: ${REDIS_HOST:localhost}
+      port: ${REDIS_PORT:6379}
+  cloud:
+    gateway:
+      server:
+        webflux:
+          # Each route has exactly one rate limiter, so buckets never share settings.
+          routes:
+            # Sign-in: per IP, to slow down password guessing (the control plane also locks accounts).
+            - id: auth
+              uri: ${CONTROL_PLANE_URL:http://localhost:8202}
+              predicates:
+                - Path=/api/auth/**
+              filters:
+                - name: RequestRateLimiter
+                  args:
+                    key-resolver: "#{@userKeyResolver}"
+                    redis-rate-limiter.replenishRate: 1
+                    redis-rate-limiter.burstCapacity: 10
+            # LLM-backed endpoints cost money: tighter buckets.
+            - id: copilot
+              uri: ${CONTROL_PLANE_URL:http://localhost:8202}
+              predicates:
+                - Path=/api/policy/copilot
+              filters:
+                - name: RequestRateLimiter
+                  args:
+                    key-resolver: "#{@userKeyResolver}"
+                    redis-rate-limiter.replenishRate: 1
+                    redis-rate-limiter.burstCapacity: 5
+            - id: control-plane
+              uri: ${CONTROL_PLANE_URL:http://localhost:8202}
+              predicates:
+                - Path=/api/me,/api/teams/**,/api/teams,/api/keys/**,/api/keys,/api/policy/**,/api/policy,/api/providers/**,/api/providers,/api/routes/**,/api/routes,/api/dictionary,/api/topics,/api/simulator/**,/api/simulator
+              filters:
+                - name: RequestRateLimiter
+                  args:
+                    key-resolver: "#{@userKeyResolver}"
+                    redis-rate-limiter.replenishRate: 20
+                    redis-rate-limiter.burstCapacity: 60
+            - id: explain
+              uri: ${INSIGHT_URL:http://localhost:8203}
+              predicates:
+                - Path=/api/insight/incidents/*/explain
+              filters:
+                - name: RequestRateLimiter
+                  args:
+                    key-resolver: "#{@userKeyResolver}"
+                    redis-rate-limiter.replenishRate: 1
+                    redis-rate-limiter.burstCapacity: 5
+            # The live feed is a long-lived stream; no limiter.
+            - id: live
+              uri: ${INSIGHT_URL:http://localhost:8203}
+              predicates:
+                - Path=/api/insight/live
+            - id: insight
+              uri: ${INSIGHT_URL:http://localhost:8203}
+              predicates:
+                - Path=/api/insight/**
+              filters:
+                - name: RequestRateLimiter
+                  args:
+                    key-resolver: "#{@userKeyResolver}"
+                    redis-rate-limiter.replenishRate: 20
+                    redis-rate-limiter.burstCapacity: 60
+            - id: playground
+              uri: ${PROXY_URL:http://localhost:8201}
+              predicates:
+                - Path=/api/playground/**,/api/proxy/**
+              filters:
+                - name: RequestRateLimiter
+                  args:
+                    key-resolver: "#{@userKeyResolver}"
+                    redis-rate-limiter.replenishRate: 10
+                    redis-rate-limiter.burstCapacity: 30
+            # The OpenAI-compatible API authenticates with virtual keys and enforces per-key limits itself.
+            - id: proxy-v1
+              uri: ${PROXY_URL:http://localhost:8201}
+              predicates:
+                - Path=/v1/**
+
+server:
+  port: ${PORT:8080}
+
+veil:
+  jwt-secret: ${JWT_SECRET:change-me-in-production-this-is-a-32+-byte-dev-secret}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,gateway
+  endpoint:
+    health:
+      probes:
+        enabled: true

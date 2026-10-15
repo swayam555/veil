@@ -1,0 +1,10 @@
+{
+  "name": "veil-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Veil browser extension (Chrome MV3). No build step: load this folder unpacked.",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "cd .. && rm -f frontend/public/downloads/veil-extension.zip && mkdir -p frontend/public/downloads && zip -qr frontend/public/downloads/veil-extension.zip extension -x 'extension/test/*' 'extension/package.json' 'extension/node_modules/*'"
+  }
+}

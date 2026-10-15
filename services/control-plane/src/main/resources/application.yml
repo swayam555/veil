@@ -1,0 +1,61 @@
+spring:
+  application:
+    name: control-plane
+  threads:
+    virtual:
+      enabled: true
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:control}
+    username: ${DB_USER:veil}
+    password: ${DB_PASSWORD:veil}
+    hikari:
+      maximum-pool-size: 10
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP:localhost:9092}
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      acks: all
+      properties:
+        enable.idempotence: true
+        linger.ms: 5
+
+server:
+  port: ${PORT:8202}
+  shutdown: graceful
+
+veil:
+  jwt-secret: ${JWT_SECRET:change-me-in-production-this-is-a-32+-byte-dev-secret}
+  # 32 random bytes, base64. Shared with guard-proxy. Generate your own: openssl rand -base64 32
+  master-key: ${VEIL_MASTER_KEY:3q2+7wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=}
+  proxy-url: ${PROXY_URL:http://localhost:8201}
+  seed-demo: ${SEED_DEMO:true}
+  ai:
+    provider: ${AI_PROVIDER:none}
+    api-key: ${AI_API_KEY:}
+    base-url: ${AI_BASE_URL:}
+    model: ${AI_MODEL:}
+    timeout: ${AI_TIMEOUT:60s}
+  upstream:
+    base-url: ${UPSTREAM_BASE_URL:}
+    api-key: ${UPSTREAM_API_KEY:}
+    model: ${UPSTREAM_MODEL:}
+
+springdoc:
+  api-docs:
+    path: /api/control/openapi
+  swagger-ui:
+    path: /api/control/docs
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      probes:
+        enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}

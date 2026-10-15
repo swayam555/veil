@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Veil — AI data guard",
+  "short_name": "Veil",
+  "version": "1.0.0",
+  "description": "Stops customer data, secrets and confidential work from being pasted into AI chat websites. Part of Veil, the open-source AI data firewall.",
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "action": { "default_popup": "popup.html", "default_title": "Veil" },
+  "options_page": "options.html",
+  "background": { "service_worker": "background.js" },
+  "permissions": ["storage"],
+  "host_permissions": ["http://localhost/*", "http://127.0.0.1/*"],
+  "optional_host_permissions": ["https://*/*", "http://*/*"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*", "https://chat.openai.com/*", "https://claude.ai/*", "https://gemini.google.com/*",
+        "https://copilot.microsoft.com/*", "https://www.perplexity.ai/*", "https://perplexity.ai/*", "https://chat.deepseek.com/*",
+        "https://chat.mistral.ai/*", "https://poe.com/*", "https://www.meta.ai/*",
+        "http://localhost/demo/*", "http://127.0.0.1/demo/*"
+      ],
+      "js": ["lib/veil-core.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

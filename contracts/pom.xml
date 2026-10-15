@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>dev.veil</groupId>
+        <artifactId>veil-parent</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>contracts</artifactId>
+    <description>Kafka events and configuration snapshots shared between Veil services</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>dev.veil</groupId>
+            <artifactId>detection-core</artifactId>
+        </dependency>
+    </dependencies>
+</project>

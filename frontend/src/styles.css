@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+/*
+ * Veil design tokens. Calm, precise, security-grade: a light console on warm paper, one confident indigo for
+ * the brand and primary actions, and four reserved decision colours that always appear with a label.
+ * Chart colours (protected / flagged / blocked) were validated for colour-vision deficiency on the light surface.
+ */
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+
+  --color-paper: #f6f6f3;
+  --color-surface: #ffffff;
+  --color-ink: #0d1117;
+  --color-ink-2: #3d4450;
+  --color-muted: #6b7280;
+  --color-line: #e5e4de;
+  --color-line-strong: #d4d2ca;
+
+  --color-brand: #4f46e5;
+  --color-brand-ink: #3730a3;
+  --color-brand-soft: #eef0ff;
+
+  /* Decisions (reserved; always shown with a text label). */
+  --color-protect: #0e9384;
+  --color-protect-soft: #e3f5f2;
+  --color-warn: #c27c0e;
+  --color-warn-soft: #fbf1df;
+  --color-block: #d1373d;
+  --color-block-soft: #fbe7e7;
+  --color-local: #2563eb;
+  --color-local-soft: #e5edfd;
+
+  --color-night: #0a0c12;
+  --color-night-2: #11141d;
+  --color-night-line: #222737;
+
+  --radius-card: 14px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "ss01", "cv11";
+}
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .45rem;
+  height: 2.25rem; padding: 0 .9rem; border-radius: 10px; font-size: .875rem; font-weight: 550;
+  border: 1px solid transparent; cursor: pointer; transition: background .15s, border-color .15s, color .15s, transform .05s;
+  white-space: nowrap; user-select: none;
+}
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn-primary { background: var(--color-brand); color: white; }
+.btn-primary:hover:not(:disabled) { background: var(--color-brand-ink); }
+.btn-ghost { background: transparent; color: var(--color-ink-2); border-color: var(--color-line-strong); }
+.btn-ghost:hover:not(:disabled) { background: #fff; border-color: var(--color-ink-2); color: var(--color-ink); }
+.btn-danger { background: var(--color-block); color: white; }
+.btn-danger:hover:not(:disabled) { background: #b42c31; }
+.btn-sm { height: 1.85rem; padding: 0 .65rem; font-size: .8rem; border-radius: 8px; }
+
+/* Cards and form controls */
+.card { background: var(--color-surface); border: 1px solid var(--color-line); border-radius: var(--radius-card); }
+.input, .select, .textarea {
+  width: 100%; background: #fff; border: 1px solid var(--color-line-strong); border-radius: 10px;
+  padding: .55rem .75rem; font: inherit; font-size: .9rem; color: var(--color-ink); outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.input:focus, .select:focus, .textarea:focus { border-color: var(--color-brand); box-shadow: 0 0 0 3px #4f46e522; }
+.textarea { resize: vertical; line-height: 1.55; }
+.label { display: block; font-size: .78rem; font-weight: 600; color: var(--color-ink-2); margin-bottom: .35rem; }
+.eyebrow { font-size: .72rem; font-weight: 650; letter-spacing: .08em; text-transform: uppercase; color: var(--color-muted); }
+
+/* Tables */
+.table { width: 100%; border-collapse: collapse; font-size: .875rem; }
+.table th { text-align: left; font-weight: 600; font-size: .75rem; color: var(--color-muted); padding: .6rem .9rem;
+  border-bottom: 1px solid var(--color-line); white-space: nowrap; }
+.table td { padding: .65rem .9rem; border-bottom: 1px solid var(--color-line); vertical-align: middle; }
+.table tr:last-child td { border-bottom: none; }
+.table tbody tr.clickable { cursor: pointer; }
+.table tbody tr.clickable:hover { background: #fafaf7; }
+
+/* Focus visibility for keyboard users */
+:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+@keyframes fade-up { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.fade-up { animation: fade-up .35s ease-out both; }
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.pulse-dot { animation: pulse-dot 1.6s ease-in-out infinite; }
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+.skeleton { background: linear-gradient(90deg, #eeede8 0%, #f6f5f1 50%, #eeede8 100%); background-size: 800px 100%;
+  animation: shimmer 1.4s linear infinite; border-radius: 8px; }

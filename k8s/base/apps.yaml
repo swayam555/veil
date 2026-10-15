@@ -1,0 +1,376 @@
+# Console API edge: JWT, roles, per-user Redis rate limits.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: edge-gateway
+  labels: { app: edge-gateway, tier: app }
+spec:
+  replicas: 2
+  strategy:
+    rollingUpdate: { maxSurge: 1, maxUnavailable: 0 }
+  selector:
+    matchLabels: { app: edge-gateway }
+  template:
+    metadata:
+      labels: { app: edge-gateway, tier: app }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "8080"
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: { type: RuntimeDefault }
+      terminationGracePeriodSeconds: 30
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector: { matchLabels: { app: edge-gateway } }
+      containers:
+        - name: edge-gateway
+          image: ghcr.io/your-org/veil-edge-gateway:1.0.0
+          ports: [{ containerPort: 8080, name: http }]
+          envFrom:
+            - configMapRef: { name: veil-config }
+            - secretRef: { name: veil-secrets }
+          env:
+            - { name: PORT, value: "8080" }
+          startupProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 5
+            failureThreshold: 36
+          readinessProbe:
+            httpGet: { path: /actuator/health/readiness, port: http }
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 10
+          resources:
+            requests: { cpu: 200m, memory: 384Mi }
+            limits: { memory: 384Mi }
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: { drop: [ALL] }
+          volumeMounts:
+            - { name: tmp, mountPath: /tmp }
+      volumes:
+        - name: tmp
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: edge-gateway
+spec:
+  selector: { app: edge-gateway }
+  ports: [{ port: 8080, targetPort: http }]
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: edge-gateway
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: { app: edge-gateway }
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: edge-gateway
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: edge-gateway }
+  minReplicas: 2
+  maxReplicas: 8
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target: { type: Utilization, averageUtilization: 65 }
+---
+
+# Configuration and identity. Several replicas are safe: the outbox relay uses FOR UPDATE SKIP LOCKED and
+# demo seeding takes a Postgres advisory lock.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: control-plane
+  labels: { app: control-plane, tier: app }
+spec:
+  replicas: 2
+  strategy:
+    rollingUpdate: { maxSurge: 1, maxUnavailable: 0 }
+  selector:
+    matchLabels: { app: control-plane }
+  template:
+    metadata:
+      labels: { app: control-plane, tier: app }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "8202"
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: { type: RuntimeDefault }
+      terminationGracePeriodSeconds: 30
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector: { matchLabels: { app: control-plane } }
+      containers:
+        - name: control-plane
+          image: ghcr.io/your-org/veil-control-plane:1.0.0
+          ports: [{ containerPort: 8202, name: http }]
+          envFrom:
+            - configMapRef: { name: veil-config }
+            - secretRef: { name: veil-secrets }
+          env:
+            - { name: PORT, value: "8202" }
+            - { name: DB_NAME, value: control }
+          startupProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 5
+            failureThreshold: 36
+          readinessProbe:
+            httpGet: { path: /actuator/health/readiness, port: http }
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 10
+          resources:
+            requests: { cpu: 200m, memory: 512Mi }
+            limits: { memory: 512Mi }
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: { drop: [ALL] }
+          volumeMounts:
+            - { name: tmp, mountPath: /tmp }
+      volumes:
+        - name: tmp
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: control-plane
+spec:
+  selector: { app: control-plane }
+  ports: [{ port: 8202, targetPort: http }]
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: control-plane
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: { app: control-plane }
+---
+
+# The data plane. Stateless (configuration arrives through Kafka into memory), so it scales on CPU; the
+# embedding model makes it CPU-bound by design. Each replica consumes config with its own consumer group.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guard-proxy
+  labels: { app: guard-proxy, tier: app }
+spec:
+  replicas: 3
+  strategy:
+    rollingUpdate: { maxSurge: 1, maxUnavailable: 0 }
+  selector:
+    matchLabels: { app: guard-proxy }
+  template:
+    metadata:
+      labels: { app: guard-proxy, tier: app }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "8201"
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: { type: RuntimeDefault }
+      terminationGracePeriodSeconds: 30
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector: { matchLabels: { app: guard-proxy } }
+      containers:
+        - name: guard-proxy
+          image: ghcr.io/your-org/veil-guard-proxy:1.0.0
+          ports: [{ containerPort: 8201, name: http }]
+          envFrom:
+            - configMapRef: { name: veil-config }
+            - secretRef: { name: veil-secrets }
+          env:
+            - { name: PORT, value: "8201" }
+            - { name: JAVA_TOOL_OPTIONS, value: "-XX:MaxRAMPercentage=50 -XX:+ExitOnOutOfMemoryError" }
+            - name: HOSTNAME
+              valueFrom: { fieldRef: { fieldPath: metadata.name } }
+          startupProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 5
+            failureThreshold: 60
+          readinessProbe:
+            httpGet: { path: /actuator/health/readiness, port: http }
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 10
+          resources:
+            requests: { cpu: 1000m, memory: 1Gi }
+            limits: { memory: 1Gi }
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: { drop: [ALL] }
+          volumeMounts:
+            - { name: tmp, mountPath: /tmp }
+      volumes:
+        - name: tmp
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: guard-proxy
+spec:
+  selector: { app: guard-proxy }
+  ports: [{ port: 8201, targetPort: http }]
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: guard-proxy
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: { app: guard-proxy }
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: guard-proxy
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: guard-proxy }
+  minReplicas: 3
+  maxReplicas: 30
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target: { type: Utilization, averageUtilization: 60 }
+  # Scale out fast when traffic arrives, in slowly so a burst doesn't cause flapping.
+  behavior:
+    scaleUp:
+      stabilizationWindowSeconds: 0
+      policies: [{ type: Percent, value: 100, periodSeconds: 30 }]
+    scaleDown:
+      stabilizationWindowSeconds: 300
+      policies: [{ type: Pods, value: 1, periodSeconds: 60 }]
+---
+
+# Audit consumer and read APIs. Replicas share the insight-service consumer group, so ingestion scales
+# with Kafka partitions (6). See keda/ for scaling on consumer lag instead of CPU.
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: insight-service
+  labels: { app: insight-service, tier: app }
+spec:
+  replicas: 2
+  strategy:
+    rollingUpdate: { maxSurge: 1, maxUnavailable: 0 }
+  selector:
+    matchLabels: { app: insight-service }
+  template:
+    metadata:
+      labels: { app: insight-service, tier: app }
+      annotations:
+        prometheus.io/scrape: "true"
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "8203"
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 10001
+        seccompProfile: { type: RuntimeDefault }
+      terminationGracePeriodSeconds: 30
+      topologySpreadConstraints:
+        - maxSkew: 1
+          topologyKey: kubernetes.io/hostname
+          whenUnsatisfiable: ScheduleAnyway
+          labelSelector: { matchLabels: { app: insight-service } }
+      containers:
+        - name: insight-service
+          image: ghcr.io/your-org/veil-insight-service:1.0.0
+          ports: [{ containerPort: 8203, name: http }]
+          envFrom:
+            - configMapRef: { name: veil-config }
+            - secretRef: { name: veil-secrets }
+          env:
+            - { name: PORT, value: "8203" }
+            - { name: DB_NAME, value: insight }
+          startupProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 5
+            failureThreshold: 36
+          readinessProbe:
+            httpGet: { path: /actuator/health/readiness, port: http }
+            periodSeconds: 5
+          livenessProbe:
+            httpGet: { path: /actuator/health/liveness, port: http }
+            periodSeconds: 10
+          resources:
+            requests: { cpu: 250m, memory: 512Mi }
+            limits: { memory: 512Mi }
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: { drop: [ALL] }
+          volumeMounts:
+            - { name: tmp, mountPath: /tmp }
+      volumes:
+        - name: tmp
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: insight-service
+spec:
+  selector: { app: insight-service }
+  ports: [{ port: 8203, targetPort: http }]
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: insight-service
+spec:
+  minAvailable: 1
+  selector:
+    matchLabels: { app: insight-service }
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: insight-service
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: insight-service }
+  minReplicas: 2
+  maxReplicas: 6
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target: { type: Utilization, averageUtilization: 65 }

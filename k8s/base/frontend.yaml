@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: frontend }
+  template:
+    metadata:
+      labels: { app: frontend, tier: web }
+    spec:
+      containers:
+        - name: frontend
+          image: ghcr.io/your-org/veil-frontend:1.0.0
+          ports: [{ containerPort: 80, name: http }]
+          readinessProbe:
+            httpGet: { path: /, port: http }
+          resources:
+            requests: { cpu: 20m, memory: 32Mi }
+            limits: { memory: 64Mi }
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: frontend
+spec:
+  selector: { app: frontend }
+  ports: [{ port: 80, targetPort: http }]
+---
+# The OpenAI-compatible API goes straight to the proxy pods: no extra hop, and buffering off so streamed answers
+# reach clients token by token.
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: veil-proxy
+  annotations:
+    nginx.ingress.kubernetes.io/proxy-buffering: "off"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300"
+    nginx.ingress.kubernetes.io/proxy-body-size: 4m
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: veil.local
+      http:
+        paths:
+          - path: /v1
+            pathType: Prefix
+            backend: { service: { name: guard-proxy, port: { number: 8201 } } }
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: veil-console
+  annotations:
+    # The live feed is a long-lived Server-Sent Events stream.
+    nginx.ingress.kubernetes.io/proxy-buffering: "off"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: veil.local
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend: { service: { name: edge-gateway, port: { number: 8080 } } }
+          - path: /
+            pathType: Prefix
+            backend: { service: { name: frontend, port: { number: 80 } } }

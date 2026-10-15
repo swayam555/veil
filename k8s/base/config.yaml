@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: veil-config
+data:
+  REDIS_HOST: redis
+  KAFKA_BOOTSTRAP: kafka:9092
+  DB_HOST: postgres
+  CONTROL_PLANE_URL: http://control-plane:8202
+  PROXY_URL: http://guard-proxy:8201
+  INSIGHT_URL: http://insight-service:8203
+  SEED_DEMO: "true"
+  DETECTION_TIMEOUT: 1500ms
+  RETENTION_DAYS: "30"
+  AI_PROVIDER: none
+  JAVA_TOOL_OPTIONS: "-XX:MaxRAMPercentage=70 -XX:+ExitOnOutOfMemoryError"
+---
+# Demo values only: use a secret manager (External Secrets, Sealed Secrets, a cloud CSI driver) in a real cluster.
+# VEIL_MASTER_KEY must be identical for control-plane and guard-proxy: generate with  openssl rand -base64 32
+apiVersion: v1
+kind: Secret
+metadata:
+  name: veil-secrets
+type: Opaque
+stringData:
+  JWT_SECRET: change-me-in-production-this-is-a-32+-byte-dev-secret
+  VEIL_MASTER_KEY: 3q2+7wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+  DB_USER: veil
+  DB_PASSWORD: veil
+  AI_API_KEY: ""
+  UPSTREAM_BASE_URL: ""
+  UPSTREAM_API_KEY: ""
+  UPSTREAM_MODEL: ""
